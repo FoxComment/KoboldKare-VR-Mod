@@ -1,0 +1,1451 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: NewStringDatabase_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 7b0547fe1d039e3448e29797d2fc4463, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 1602997996487704597
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516057255936
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516086616064
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810368
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810369
+    m_Localized: "Gr\xE1ficos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810370
+    m_Localized: Controles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810371
+    m_Localized: Analytics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810372
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810373
+    m_Localized: "atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810374
+    m_Localized: "Sensibilidad del rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810375
+    m_Localized: Bajo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810376
+    m_Localized: Alto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810377
+    m_Localized: Medio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810378
+    m_Localized: Apagado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810379
+    m_Localized: "KoboldKare env\xEDa datos an\xF3nimos anal\xEDticos con el fin
+      de mejorar el juego! Si desea evitar esto, haga clic en el bot\xF3n de abajo
+      (Se abrir\xE1 el navegador de internet)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810380
+    m_Localized: Abrir pagina de privacidad de datos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810381
+    m_Localized: Restablecer los valores predeterminados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810382
+    m_Localized: Guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810383
+    m_Localized: Carga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810384
+    m_Localized: "calidad de la calcoman\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810385
+    m_Localized: Modo ventana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810386
+    m_Localized: "Resoluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810387
+    m_Localized: Bloom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810388
+    m_Localized: Desenfoque de movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810389
+    m_Localized: "Oclusi\xF3n ambiental"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810390
+    m_Localized: Sombras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810391
+    m_Localized: "C\xE9sped"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810392
+    m_Localized: Reflejos en pantalla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004672
+    m_Localized: Anti-aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004673
+    m_Localized: "Grano de la pel\xEDcula"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004674
+    m_Localized: Volumen principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004675
+    m_Localized: Volumen de efectos de sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004676
+    m_Localized: "Volumen de la m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004677
+    m_Localized: "C\xE1mara FOV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004678
+    m_Localized: "Proyecci\xF3n Panini"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004679
+    m_Localized: Profundidad de campo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004680
+    m_Localized: Nubes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004681
+    m_Localized: Calidad general
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004682
+    m_Localized: Caminata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004683
+    m_Localized: Exclusivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004684
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004685
+    m_Localized: "Ventana m\xE1xima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004686
+    m_Localized: En la ventana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004687
+    m_Localized: Encendido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004688
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004690
+    m_Localized: ADVERTENCIA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004691
+    m_Localized: "ESTE JUEGO MUESTRA PERSONAJES FICTICIOS QUE PARTICIPAN EN <#FF0000>
+      COMPORTAMIENTO SEXUALMENTE EXPL\xCDCITO <#FFFFFF>\r\n\r\nAL HACER CLIC EN <#008CFF>
+      JUGAR <#FFFFFF> EST\xC1S DECLARANDO QUE:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004692
+    m_Localized: "\u2022 BAJO PENA DE PERJURIO, QUE ERES MAYOR DE 18 A\xD1OS.\r\n\u2022
+      La desnudez y representaciones expl\xEDcitas de la actividad sexual no ofenden
+      a USTED.\r\n\u2022 Se reconoce que usted es responsable de asegurar que TODAS
+      LAS PERSONAS QUE VEAN EL JUEGO desde su dispositivo son mayores de 18 a\xF1os."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004693
+    m_Localized: De acuerdo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004694
+    m_Localized: "\xA1Bienvenido a KoboldKare!\n\nEsta es una build del desarrollador
+      y est\xE1 totalmente sin terminar, \xA1as\xED que no esperes mucho!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004695
+    m_Localized: Movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004696
+    m_Localized: Salto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004697
+    m_Localized: Caminar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004698
+    m_Localized: "auto destrucci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004699
+    m_Localized: Usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004700
+    m_Localized: Tomar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004701
+    m_Localized: Empujar Agarrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004702
+    m_Localized: Agacharse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004703
+    m_Localized: "Ver estad\xEDsticas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004704
+    m_Localized: Girar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004705
+    m_Localized: Descongelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004706
+    m_Localized: "Mu\xF1eca de trapo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004707
+    m_Localized: Cambiar modo de agarre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004708
+    m_Localized: Mirar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004709
+    m_Localized: Activar Agarre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004710
+    m_Localized: Restablecer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004711
+    m_Localized: Cargando...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004712
+    m_Localized: Remover escombros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004713
+    m_Localized: Mejorar Agarre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004714
+    m_Localized: Cambiar camara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004715
+    m_Localized: Agua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004716
+    m_Localized: Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198976
+    m_Localized: Hielo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198977
+    m_Localized: Leche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198978
+    m_Localized: Malteada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198979
+    m_Localized: Jugo de berenjena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198980
+    m_Localized: "Jugo de mel\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198981
+    m_Localized: Suero de crecimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198982
+    m_Localized: Suero de crecimiento incompleto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198983
+    m_Localized: Reactivo inestable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198984
+    m_Localized: Semen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198985
+    m_Localized: Huevo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198986
+    m_Localized: Grasa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198987
+    m_Localized: Amor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198988
+    m_Localized: No se encontraron reagantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198989
+    m_Localized: "Esc\xE1ner de reactivos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198990
+    m_Localized: "Explosi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198991
+    m_Localized: Potasio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198992
+    m_Localized: Multijugador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198993
+    m_Localized: "Juego r\xE1pido"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198994
+    m_Localized: Crear juego privado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198995
+    m_Localized: Sexo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198996
+    m_Localized: Matiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198997
+    m_Localized: Parte superior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198998
+    m_Localized: Espesor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198999
+    m_Localized: Brillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199000
+    m_Localized: "Saturaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199001
+    m_Localized: Contraste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199002
+    m_Localized: Pene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199003
+    m_Localized: "Tama\xF1o del pene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199004
+    m_Localized: "Tama\xF1o de tetas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199005
+    m_Localized: Equino acampanado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199006
+    m_Localized: Anudado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199007
+    m_Localized: Equino acampanado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199008
+    m_Localized: "C\xF3nico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199009
+    m_Localized: Ninguno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199010
+    m_Localized: En fuera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199011
+    m_Localized: Madera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199012
+    m_Localized: "\xDAnete al juego privado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199013
+    m_Localized: "Todav\xEDa no se encuentran salas ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199014
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199015
+    m_Localized: Unirse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199016
+    m_Localized: 'Nombre de la sala:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199017
+    m_Localized: 'Privado:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199018
+    m_Localized: "Jugadores m\xE1ximos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199019
+    m_Localized: "Tama\xF1o del Kobold"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199020
+    m_Localized: "Crear una sala p\xFAblica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393280
+    m_Localized: Primera persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393281
+    m_Localized: Tercera persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393282
+    m_Localized: "C\xE1mara libre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393283
+    m_Localized: "C\xE1mara libre pegajosa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23047808012288
+    m_Localized: Buscador de salas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23047841566720
+    m_Localized: Jugadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27145391362048
+    m_Localized: Conectando ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27145391362049
+    m_Localized: Encontrando sala aleatoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30052023062528
+    m_Localized: Sala abandonada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30052023062529
+    m_Localized: "\xA1Algo te hizo perder la conexi\xF3n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228726966833152
+    m_Localized: "Jugo de pi\xF1a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228727000387584
+    m_Localized: Gordito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228727000387585
+    m_Localized: "Tama\xF1o de bolas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6613591493496832
+    m_Localized: Calidad de los reflejos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484814208094208
+    m_Localized: Hemipene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20598708876398592
+    m_Localized: Vsync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20598708914147328
+    m_Localized: Framerate objetivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35594366247030784
+    m_Localized: "Barra de pez\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35653807596163072
+    m_Localized: Casco de seguridad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240663289856
+    m_Localized: "Un accesorio m\xE1gico que es largo y cil\xEDndrico con un anillo
+      medial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844288
+    m_Localized: Un simple casco de seguridad para proteger la cabeza de los escombros
+      que caen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844289
+    m_Localized: "Un accesorio\_m\xE1gico con un nudo, anillo medial y algunas crestas
+      y vaches."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844290
+    m_Localized: "Un accesorio\_m\xE1gico que es largo, cil\xEDndrico y tiene una
+      punta c\xF3nica. \xA1Tiene una gr\xE1n acci\xF3n telesc\xF3pica!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844291
+    m_Localized: "Barras de metal simples, seguras de cuerpo, hipoal\xE9rgicas. (S\xED,
+      entran en tus pezones)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38140087290613760
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38744048708145152
+    m_Localized: "Un accessorio m\xE1gico que es largo, tiene una forma cilindrica
+      y termina en una punta c\xF3nica. \xA1Sus bolas son internas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39595891181015040
+    m_Localized: El pene de Kandi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40936863676551168
+    m_Localized: Bolsa de cola
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41031671581560832
+    m_Localized: Collar de pinchos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41057468396654592
+    m_Localized: "Tac\xF3n alto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43625416088932352
+    m_Localized: Nuevo guardado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43643722850160640
+    m_Localized: Guardar/Cargar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43807311896563712
+    m_Localized: Nuevo juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43807311925923840
+    m_Localized: Crear juego personalizado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54368470533984256
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58074778722422784
+    m_Localized: Calidad de Goop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73168528301674496
+    m_Localized: "Bombas de pez\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80801858861977600
+    m_Localized: "Erecci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80801858895532032
+    m_Localized: "Desinflar erecci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81276700606386176
+    m_Localized: Brillo de la pantalla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81558602722627584
+    m_Localized: Chat de texto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82622016043667456
+    m_Localized: Audio de Steam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82631738259984384
+    m_Localized: "Aceleraci\xF3n por Hardware"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83373358009864192
+    m_Localized: "\xA1Bienvenido a Koboldkare!\n\nKoboldkare es un juego sin DRM.
+      \xA1Ten cuidado comparti\xE9ndolo ya que Koboldkare no necesita de un crack
+      o similares para jugar!\n\n\xA1Muchas gracias por apoyar el juego!\n\nVerifica
+      Steam, Itch.io y el Patreon para obtener actualizaciones y notas de parche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130814575387398144
+    m_Localized: "Cambiar de regi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130815543218851840
+    m_Localized: Jugabilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684424032256
+    m_Localized: "\xA1Est\xE1 vivo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169600
+    m_Localized: Riegue el huevo y espere a que su Kobold crezca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169601
+    m_Localized: El primero de muchos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169602
+    m_Localized: "Buen trabajo, ahora env\xEDame el nuevo Kobold y te recompensar\xE9
+      por tus esfuerzos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169603
+    m_Localized: "\xA1Un huevo del Drag\xF3n Lord!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169604
+    m_Localized: "Soy Nymrianth, el Se\xF1or del Drag\xF3n. Te ordeno que comience
+      a trabajar como Kobold Karetaker y plantar un huevo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332828946432
+    m_Localized: "\xA1Actualiza tu granja!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500864
+    m_Localized: "Ve a la ciudad y compra un molino, busque el taller de construcci\xF3n
+      atendido por una oveja. La del sombrero de construccion."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500865
+    m_Localized: Alimentar el jugo de fruta de Kobolds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500866
+    m_Localized: "Ustedes Kobolds tienen cuerpos interesantes, intentan moler un
+      poco de fruta y luego alimentarla a un Kobold y ver qu\xE9 sucede."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500867
+    m_Localized: '-'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500868
+    m_Localized: '-'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500869
+    m_Localized: Entrega una gran polla Kobolds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500870
+    m_Localized: "Necesito kobolds con pollas grandes, preparar una y env\xEDelo
+      r\xE1pidamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695168
+    m_Localized: Tetas, grandes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695169
+    m_Localized: Necesito que me entregues un kobold con grandes tetas, estoy hablando
+      masivo, espero que manejes esto y espero que no hagas preguntas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695170
+    m_Localized: Infla con semen a tus kobolds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695171
+    m_Localized: "Llena un kobold con semen hasta que no puedan soportar m\xE1s,
+      necesito ver cu\xE1n duradera es realmente tu tipo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695172
+    m_Localized: "\xA1Todo el camino a trav\xE9s!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695173
+    m_Localized: "Hagamos otra prueba de resistencia, penetre en un kobold con una
+      polla m\xE1s tiempo que su cuerpo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695174
+    m_Localized: "\xA1Tiempo boca abajo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695175
+    m_Localized: Lo mejor para nosotros es tener algunos kobolds superados, engordarse
+      un poco y enviarlos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695176
+    m_Localized: '-'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695177
+    m_Localized: '-'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695178
+    m_Localized: Gran McLargehuge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695179
+    m_Localized: Haz un kobold tan alto que puedan mirar por encima de una casa,
+      receta secreta ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202939310757433344
+    m_Localized: Hongo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202987527876431872
+    m_Localized: Control de la cadera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202998194956193792
+    m_Localized: Ajustar el nivel de crouch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603934085120
+    m_Localized: Apodo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445248
+    m_Localized: Carne molida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445249
+    m_Localized: Masa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445250
+    m_Localized: Hamburguesa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445251
+    m_Localized: Harina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445252
+    m_Localized: "Paleta de pi\xF1a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210151247266238464
+    m_Localized: "Ban\xE1nov\xFD z\xE1kusek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210151247308181504
+    m_Localized: Pene humanoide circunsectado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210156174176735232
+    m_Localized: Pastel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210159659429449728
+    m_Localized: Ponche de huevo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210159659429449729
+    m_Localized: Yogur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210160988449198080
+    m_Localized: Tarta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210162028410097664
+    m_Localized: Huevos revueltos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210162028410097665
+    m_Localized: Cena de huevo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211626638807977984
+    m_Localized: Polla punta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211626638837338112
+    m_Localized: "Un pene de clubbed con p\xFAas suaves y carnosas y bolas bajas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651584
+    m_Localized: 'Habilita o deshabilita los trucos de todo el servidor.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651585
+    m_Localized: Muestra este mensaje.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651586
+    m_Localized: Enumera todos los reactivos, prefabricados y equipos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651587
+    m_Localized: Da el reactivo especificado, o prefabricado. Use /List para encontrar
+      todos los nombres propios.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651588
+    m_Localized: Equipa el equipo especificado. Use /List para encontrar nombres
+      propios.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211765989932060672
+    m_Localized: Polla chapada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211765989965615104
+    m_Localized: "Una polla acanalada con placas blandas y p\xFAas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775633371136
+    m_Localized: "\xA1Fracasar totalmente!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314176
+    m_Localized: "Los huevos de la tienda no son tan buenos. Encuentra un buen Kobold,
+      embarazlos, luego p\xF3ngalos en la estaci\xF3n de reproducci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314177
+    m_Localized: "\xA1Hamburguesa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314178
+    m_Localized: "Te envi\xE9 algunos suministros para hacer una hamburguesa, usar
+      el molinillo para combinarlos y luego alimentarla a un Kobold."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314179
+    m_Localized: "Desbloquear la estaci\xF3n de orde\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314180
+    m_Localized: "Necesitamos expandir nuestras exportaciones de alimentos, comprar
+      el contrato de la estaci\xF3n de leche en la oficina de construcci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314181
+    m_Localized: "\xA1Haga algunos alimentos a base de leche!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314182
+    m_Localized: Kobold Milk tiene mucho valor nutricional, intente combinarlo con
+      otras cosas en un cubo para hacer nuevos alimentos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314183
+    m_Localized: Jugo up kobolds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314184
+    m_Localized: "Necesito que ejecute algunos experimentos; Alimenta tu berenjena
+      Kobolds, mel\xF3n o jugo de pi\xF1a. Esto deber\xEDa hacer que las partes de
+      sus cuerpos crezcan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810347585536
+    m_Localized: "\xA1Espeleolog\xEDa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945664
+    m_Localized: "Estoy sintiendo una presencia oscura en las cuevas cercanas, vaya
+      e investigue para m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945665
+    m_Localized: Compra la maquina cambia mentes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945666
+    m_Localized: Compra la maquina cambia mentes del caballero en la cueva.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945667
+    m_Localized: Oh ho ho .. bienvenido ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945668
+    m_Localized: "Tengo el secreto de la inmortalidad aqu\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945669
+    m_Localized: Por un precio, por supuesto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213569843006853120
+    m_Localized: "\xA1Ciencia rara!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213569843006853121
+    m_Localized: "Qu\xE9 dispositivo tan interesante has obtenido. Ve e intenta usarlo,
+      trae otro Kobold contigo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567786430464
+    m_Localized: "\xA1Cumming!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790592
+    m_Localized: "Aprenda m\xE1s sobre la elasticidad que dobla la realidad de Kobolds,
+      jode a un kobold con una polla m\xE1s grande de lo que su cuerpo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790593
+    m_Localized: "Necesitaremos un nido m\xE1s grande."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790594
+    m_Localized: Quiero que hagas que uno de tus kobolds ponga un gran huevo. Tan
+      grande como puedes conseguirlo realmente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790595
+    m_Localized: "\xA1Grande y redondo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790596
+    m_Localized: "Use una m\xE1quina inflator para hacer un Kobold grande y redondo.
+      Creo que podr\xEDa ser divertido verlos rodar o algo as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214255575602089984
+    m_Localized: "Patea a un jugador con la identificaci\xF3n del actor objetivo.
+      Use `/List Players` para encontrar ID de actor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223010832384
+    m_Localized: Hola amigo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775424
+    m_Localized: Bienvenido al metro.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775425
+    m_Localized: "Ignora el humo, si\xE9ntete libre de navegar por las mercanc\xEDas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775426
+    m_Localized: "\xA1Rayos! \xA1Estas desnudo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775427
+    m_Localized: De todos modos solo uh ... agarra los productos que quieras, supongo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775428
+    m_Localized: "\xBFD\xF3nde est\xE1s guardando tu dinero de todos modos ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775429
+    m_Localized: "\xA1Hola! Eres de esa granja all\xED, \xBFverdad? \xBFBuscas actualizar?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775430
+    m_Localized: Simplemente seleccione algo en la pared y lo construiremos para
+      usted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775431
+    m_Localized: "Uh ... \xBFte importa ponerse unos pantalones?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214891307416997888
+    m_Localized: Longitud de la polla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464138
+    m_Localized: "Cu\xE1druple relleno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464139
+    m_Localized: "Aha, \xBFno ser\xEDa tan divertido si estuvieras atrapado 4 consoladores
+      en la boca de un kobold ... te ordeno que hagas eso?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464140
+    m_Localized: Vender Micro Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464141
+    m_Localized: "Me gustar\xEDa un kobold realmente peque\xF1o que pueda encajar
+      en ... peque\xF1as e \xEDntimas grietas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464142
+    m_Localized: Gatastrofe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464143
+    m_Localized: "Use explosivos para volar los escombros en la granja para que pueda
+      tener m\xE1s espacio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464144
+    m_Localized: Haz el kobold perfecto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464145
+    m_Localized: "He decidido que necesito un consorte, crea el Kobold perfecto para
+      m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464146
+    m_Localized: Pipa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464147
+    m_Localized: "\xA1Ellos son perfectos! Voy a estar ... bastante ocupado ... Te
+      estoy promocionando a una posici\xF3n de supervisor, comprar\xE1s Kobolds en
+      mi nombre de otros Kobold Karetakers, encuentre a alguien para construir el
+      tubo necesario."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464148
+    m_Localized: KoboldKare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464149
+    m_Localized: "\xA1Supongo que ahora soy el jefe! Deber\xEDa intentar comprar
+      un kobold con el nuevo sistema neum\xE1tico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464150
+    m_Localized: "\xA1Bienvenidos! \xBFBuscas comprar algunas semillas? \xA1Tambi\xE9n
+      tenemos huevos de Kobold!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464151
+    m_Localized: "\xBFNecesitas ayuda para encontrar algo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464152
+    m_Localized: "\xBFBienvenido al casino, vienes por negocio o placer?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464153
+    m_Localized: "Por tu falta de ropa, adivinar\xE9 un poco de ambos. Puedes jugar
+      la m\xE1quina Pancinko para ganar algunos adornos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464154
+    m_Localized: Vuelve pronto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885794521088
+    m_Localized: Entonces ... necesitas algo nuevo de mi parte ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464128
+    m_Localized: "Lo har\xE9, por un precio, por supuesto ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464129
+    m_Localized: "Hay cosas en el frente y detr\xE1s de m\xED tambi\xE9n, as\xED
+      que realmente lev\xE1ntate aqu\xED, no es necesario ser t\xEDmido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464130
+    m_Localized: "\xA1Hey amigo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464131
+    m_Localized: "\xBFTe ves bien hoy, \xBFnecesitas ayuda para llevar algo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464132
+    m_Localized: "\xA1Hola! \xBFNecesitas ayuda hoy?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464133
+    m_Localized: "\xBFCrees que me ver\xEDa bien con un sombrero?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464134
+    m_Localized: "\xBFNecesitas algo construido?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464135
+    m_Localized: "\xA1Ah\xED est\xE1 mi cliente favorito!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464136
+    m_Localized: "Lo siento, \xA1no tengo que construir para ti! Gracias por ser
+      un cliente tan leal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464137
+    m_Localized: "Me quedar\xE9 aqu\xED en caso de que alg\xFAn otro Kobold desnudo
+      quiera que las construya m\xE1quinas de fetiche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215247205985472512
+    m_Localized: "Men\xFA principal seguro para el trabajo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620096
+    m_Localized: "\xA1Juice!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620097
+    m_Localized: "Quiero muchos tipos diferentes de Kobold, y eso significa que necesitas
+      m\xE1s jugos de frutas. \xA1Muela m\xE1s fruta!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620098
+    m_Localized: "Una docena de grandes, tal vez m\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620099
+    m_Localized: "Quiero ver m\xE1s huevos de Kobold grandes. \xA1A trabajar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620100
+    m_Localized: "Raza: \xA1Tiempo de barriga!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620101
+    m_Localized: "Quiero muchos kobolds gordos, son realmente \xFAtiles como pisa
+      papeles  y almohadas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620102
+    m_Localized: 'Raza: Sausage Fest'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620103
+    m_Localized: Necesito muchos kobolds con pollas gigantes, es vital para mis planes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620104
+    m_Localized: 'Raza: Big McLargehuge'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620105
+    m_Localized: "Quiero m\xE1s de ese tipo gigante de Kobold, son realmente \xFAtiles
+      para limpiar el techo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620106
+    m_Localized: 'Raza: tetas, grandes!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620107
+    m_Localized: "Tetas que no te hagan una rusa si no una Uni\xF3n Sovi\xE9tica.
+      Este no es por la practicidad, es divertido sacudirse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783219814400
+    m_Localized: 'Raza: itty bitty'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783219814401
+    m_Localized: "Hazme muchos kobolds peque\xF1os, su tama\xF1o y cuerpos el\xE1sticos
+      los hacen muy buenos y reutilizables condones."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216470162770546688
+    m_Localized: Programa espacial de Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216470162770546689
+    m_Localized: "Tengo curiosidad sobre lo bien que lo hace Kobolds con la fricci\xF3n
+      del aire, env\xEDa uno al cielo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216833884877803520
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228010423070457856
+    m_Localized: Reductor de enfermos de movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231982103588818944
+    m_Localized: No se pudo cargar Guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231982103609790464
+    m_Localized: "\xA1No se pudo cargar el ahorro! Se puede guardar con una versi\xF3n
+      diferente de Koboldkare."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216333655481044992
+    m_Localized: "No hay nada m\xE1s para ti aqu\xED ... por ahora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216333655518793728
+    m_Localized: "No hay nada m\xE1s para ti aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248938687950692352
+    m_Localized: Invertir el eje Y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482117312512
+    m_Localized: Shrink
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482138284032
+    m_Localized: Shrink
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482138284033
+    m_Localized: Polla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258142671894794240
+    m_Localized: "Modificaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258400516968075264
+    m_Localized: "Configuraci\xF3n de mod"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268693956486176768
+    m_Localized: Descarga ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269043733614874624
+    m_Localized: Seleccionar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277668489729613824
+    m_Localized: "Instalaci\xF3n ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277970981017296896
+    m_Localized: Cargar guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277970981017296897
+    m_Localized: Eliminar guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278016973389373440
+    m_Localized: '{0:plural:1 segundo|{} segundos}'
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 278016973418733568
+    m_Localized: '{0:plural:1 minuto|{} minutos}'
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 278016973418733569
+    m_Localized: '{0:plural:1 hora|{} horas}'
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 278016973422927872
+    m_Localized: "{0:plural:1 d\xEDa|{} d\xEDas}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 278016973422927873
+    m_Localized: "{0:plural:1 a\xF1o|{} a\xF1os}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 278029437602570240
+    m_Localized: "\xBFEst\xE1 seguro?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278029437631930368
+    m_Localized: "\xA1Eliminar un salvamento es permanente!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278029437631930369
+    m_Localized: "Cargar el Guardar ahora perder\xE1 su sesi\xF3n actual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279799208752914432
+    m_Localized: "\xA1Modding requiere un sistema compatible de 64 bits! Actualice
+      su sistema operativo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360320
+    m_Localized: Penes habilitados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360321
+    m_Localized: Personajes jugables habilitados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360322
+    m_Localized: "\xA1No se han encontrado modificaciones! Suscr\xEDbase a modificaciones
+      en el taller de vapor, o inst\xE1lelos directamente en {ModManager.Path}."
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704597
+  - m_Id: 280448613000617984
+    m_Localized: "No se pudo conectar a Steam, no se descargar\xE1 autom\xE1ticamente
+      mods."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295755658549579776
+    m_Localized: Grifo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645282502492160
+    m_Localized: HUD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645277259612160
+    m_Localized: VR Modo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321348923228110848
+    m_Localized: "Mod en la etapa m\xE1s temprana de desarrollo\nContiene muchos
+      errores y problemas.\nY, por favor, establece el tama\xF1o de tu Kobold en
+      uno o menos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645279906217984
+    m_Localized: Modo sentado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645280883490816
+    m_Localized: "T\xFAneles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645281676214272
+    m_Localized: "Tama\xF1o de mano realista"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645283295215616
+    m_Localized: "Pr\xF3ximas Funciones"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645284196990976
+    m_Localized: Antiguo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645495162093568
+    m_Localized: "M\xEDnimo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645498198769664
+    m_Localized: Avanzado
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1602997996487704597
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020279f8e71db030020e7a08e71db03012067def6b6db03002067def6b6db03002067dcf6b6db03002027def6b6db03012027def6b6db030220a7e9e02de203

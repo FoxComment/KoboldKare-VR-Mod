@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: NewStringDatabase_rm
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: rm
+  m_SharedData: {fileID: 11400000, guid: 7b0547fe1d039e3448e29797d2fc4463, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 1602997996487704595
+  m_TableData:
+  - m_Id: 278016973422927873
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  - m_Id: 278016973422927872
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  - m_Id: 278016973418733569
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  - m_Id: 278016973418733568
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  - m_Id: 278016973389373440
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  - m_Id: 279836570866360322
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704595
+  references:
+    version: 2
+    RefIds:
+    - rid: 1602997996487704595
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020279f8e71db030020e7a08e71db03012067def6b6db03002067def6b6db03012027def6b6db03002027def6b6db03002067dcf6b6db030220a7e9e02de203

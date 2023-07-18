@@ -1,0 +1,1472 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: NewStringDatabase_cs
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 7b0547fe1d039e3448e29797d2fc4463, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 1602997996487704579
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: "Hr\xE1t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516057255936
+    m_Localized: "Mo\u017Enosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516086616064
+    m_Localized: "Odej\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810368
+    m_Localized: Zvuk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810369
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810370
+    m_Localized: "Ovl\xE1d\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810371
+    m_Localized: "Sb\u011Br dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810372
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810373
+    m_Localized: "Zp\u011Bt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810374
+    m_Localized: "Citlivost my\u0161i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810375
+    m_Localized: "M\xE1lo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810376
+    m_Localized: Velmi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810377
+    m_Localized: "St\u0159edn\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810378
+    m_Localized: Vypnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810379
+    m_Localized: "KoboldKare pos\xEDl\xE1 anonymn\xED data za \xFA\u010Delem zlep\u0161en\xED
+      hern\xEDho z\xE1\u017Eitku. Pokud chcete p\u0159edej\xEDt zas\xEDl\xE1n\xED
+      dat, klikn\u011Bte na tla\u010D\xEDtko n\xED\u017Ee. (Klinut\xED otev\u0159e
+      internetov\xFD prohl\xED\u017Ee\u010D.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810380
+    m_Localized: "Otev\u0159\xEDt str\xE1nku ochrany dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810381
+    m_Localized: "Resetovat na v\xFDchoz\xED nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810382
+    m_Localized: "Ulo\u017Eit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810383
+    m_Localized: "Na\u010D\xEDst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810384
+    m_Localized: "Kvalita dekorativn\xEDch textur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810385
+    m_Localized: "Re\u017Eim okna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810386
+    m_Localized: "Rozli\u0161en\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810387
+    m_Localized: "p\u0159esv\xEDcen\xED obrazu (Bloom)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810388
+    m_Localized: "Rozost\u0159en\xED pohybu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810389
+    m_Localized: "zast\xEDn\u011Bn\xED okol\xEDm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810390
+    m_Localized: "St\xEDny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810391
+    m_Localized: "Tr\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516090810392
+    m_Localized: "odrazy okol\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004672
+    m_Localized: "Vyhlazovan\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004673
+    m_Localized: "Filmov\xE9 zrno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004674
+    m_Localized: "Celkov\xE1 hlasitost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004675
+    m_Localized: "zvukov\xE9 efekty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004676
+    m_Localized: Hudba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004677
+    m_Localized: "Zorn\xE9 pole"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004678
+    m_Localized: "Zak\u0159iven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004679
+    m_Localized: Hloubka ostrosti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004680
+    m_Localized: "Kvalita mrak\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004681
+    m_Localized: "Celkov\xE1 kvalita"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004682
+    m_Localized: "p\u0159epnut\xED ch\u016Fze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004683
+    m_Localized: "V\xFDhradn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004684
+    m_Localized: "Cel\xE1 obrazovka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004685
+    m_Localized: "Okno na cel\xFD obraz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004686
+    m_Localized: "V okn\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004687
+    m_Localized: Zapnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004688
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004690
+    m_Localized: "VAROV\xC1N\xCD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004691
+    m_Localized: "TATO HRA ZOBRAZUJE FIKTIVN\xCD POSTAVY VYKON\xC1VAJ\xCDC\xCD A
+      U\u010CASTN\xCDC\xCD SE <#FF0000> NEVHODN\xC9HO A SEXU\xC1LN\xCDHO CHOV\xC1N\xCD
+      <#FFFFFF>\r\n\r\nKLIKNUT\xCDM NA <#008CFF> HR\xC1T <#FFFFFF> UV\xC1D\xCDTE,
+      \u017DE:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004692
+    m_Localized: "\u2022 pod trestem k\u0159iv\xE9 p\u0159\xEDsahy, je v\xE1m v\xEDce
+      ne\u017E 18 let.\r\n\u2022 nahota a zobrazen\xED sexu\xE1ln\xEDho chov\xE1n\xED
+      v\xE1s nijak nepohor\u0161uje.\r\n\u2022 souhlas\xEDte s p\u0159evzet\xEDm
+      zodpov\u011Bdnosti za uji\u0161t\u011Bn\xED, \u017Ee v\xE1mi zobrazovan\xFD
+      obsah hry, je ukazov\xE1n pouze osob\xE1m star\u0161\xEDm 18 let."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004693
+    m_Localized: "dob\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004694
+    m_Localized: "V\xEDtejte v KoboldKare!\n\nToto je v\xFDvoj\xE1\u0159sk\xE1 verze
+      a je zcela nekompletn\xED, neo\u010Dek\xE1vejte moc! \n\nMoc V\xE1m d\u011Bkuji
+      za podporu t\xE9to hry!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004695
+    m_Localized: Pohyb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004696
+    m_Localized: Skok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004697
+    m_Localized: "Ch\u016Fze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004698
+    m_Localized: "sebevra\u017Eda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004699
+    m_Localized: "Pou\u017E\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004700
+    m_Localized: "Pou\u017E\xEDt v chycen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004701
+    m_Localized: "t\xE1hnout, tla\u010Dit v \xFAchopu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004702
+    m_Localized: "skr\u010Dit se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004703
+    m_Localized: Zobrazit statistiky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004704
+    m_Localized: "Rotace \xFAchopu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004705
+    m_Localized: Odmrazit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004706
+    m_Localized: Ragdoll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004707
+    m_Localized: "P\u0159epnout na \xFAchop"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004708
+    m_Localized: Pohled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004709
+    m_Localized: "Pou\u017E\xEDt v chycen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004710
+    m_Localized: Resetovat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004711
+    m_Localized: "Na\u010D\xEDt\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004712
+    m_Localized: "Odstranit su\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004713
+    m_Localized: "Vylep\u0161it \xFAchop"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004714
+    m_Localized: "P\u0159epnout kameru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004715
+    m_Localized: Voda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516095004716
+    m_Localized: Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198976
+    m_Localized: Led
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198977
+    m_Localized: "Ml\xE9ko"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198978
+    m_Localized: Koktejl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198979
+    m_Localized: "\u0161\u0165\xE1va z lilku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198980
+    m_Localized: "Melounov\xE1 \u0161\u0165\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198981
+    m_Localized: "R\u016Fstov\xE9 s\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198982
+    m_Localized: "Ne\xFApln\xE9 r\u016Fstov\xE9 s\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198983
+    m_Localized: "nestabiln\xED \u010Dinidlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198984
+    m_Localized: Sperma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198985
+    m_Localized: Vejce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198986
+    m_Localized: Tuky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198987
+    m_Localized: "L\xE1ska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198988
+    m_Localized: "Nenalezeno \u017E\xE1dn\xE9 \u010Dinidlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198989
+    m_Localized: "Skener \u010Dinidel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198990
+    m_Localized: "V\xFDbuch"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198991
+    m_Localized: "Drasl\xEDk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198992
+    m_Localized: "Hra v\xEDce hr\xE1\u010D\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198993
+    m_Localized: "Rychl\xE1 hra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198994
+    m_Localized: "Vytvo\u0159te soukromou hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198995
+    m_Localized: "pohlav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198996
+    m_Localized: "Odst\xEDn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198997
+    m_Localized: "Pom\u011Br postavy / Spodn\xED \u010D\xE1st t\u011Bla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198998
+    m_Localized: Mohutnost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099198999
+    m_Localized: Jas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199000
+    m_Localized: "Nasycen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199001
+    m_Localized: Kontrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199002
+    m_Localized: Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199003
+    m_Localized: Velikost penisu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199004
+    m_Localized: "Velikost poprs\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199005
+    m_Localized: "Ko\u0148sk\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199006
+    m_Localized: "Ps\xED penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199007
+    m_Localized: "Roz\u0161\xED\u0159en\xFD ko\u0148sk\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199008
+    m_Localized: "Z\xFA\u017Een\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199009
+    m_Localized: "\u017D\xE1dn\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199010
+    m_Localized: "Pom\u011Br dovnit\u0159 / ven"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199011
+    m_Localized: "D\u0159evo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199012
+    m_Localized: "P\u0159ipojit se k soukrom\xE9 h\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199013
+    m_Localized: "Zat\xEDm nenalezena \u017E\xE1dn\xE1 m\xEDstnost..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199014
+    m_Localized: "Zru\u0161it"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199015
+    m_Localized: "P\u0159ipojit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199016
+    m_Localized: "N\xE1zev m\xEDstnosti:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199017
+    m_Localized: "Soukrom\xE9:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199018
+    m_Localized: "Maxim\xE1ln\u011B hr\xE1\u010D\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199019
+    m_Localized: Velikost Kobolda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516099199020
+    m_Localized: "Vytvo\u0159te ve\u0159ejnou hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393280
+    m_Localized: "Prvn\xED osoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393281
+    m_Localized: "T\u0159et\xED osoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393282
+    m_Localized: "Voln\xE1 kamera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516103393283
+    m_Localized: "Upevn\u011Bn\xE1 kamera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23047808012288
+    m_Localized: "Hled\xE1n\xED sever\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23047841566720
+    m_Localized: "Hr\xE1\u010Di"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27145391362048
+    m_Localized: "Spojov\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27145391362049
+    m_Localized: "Hled\xE1n\xED n\xE1hodn\xE9 m\xEDstnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30052023062528
+    m_Localized: se odpojil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30052023062529
+    m_Localized: "Spojen\xED ztraceno!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228726966833152
+    m_Localized: "Ananasov\xE1 \u0161\u0165\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228727000387584
+    m_Localized: Baculatost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228727000387585
+    m_Localized: Velikost varlat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6613591493496832
+    m_Localized: "Kvalita odraz\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10484814208094208
+    m_Localized: "dvojit\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20598708876398592
+    m_Localized: "Vertik\xE1ln\xED synchronizace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20598708914147328
+    m_Localized: "c\xEDlov\xE1 sn\xEDmkov\xE1 frekvence"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35594366247030784
+    m_Localized: "\u010Dinky do bradavek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35653807596163072
+    m_Localized: "P\u0159ilba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240663289856
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD a v\xE1lcovit\xFD s prstencem
+      v polovin\u011B a plochou \"\u0161pi\u010Dkou\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844288
+    m_Localized: "Jednoduch\xE1 p\u0159ilba na ochranu hlavy p\u0159ed padaj\xEDc\xED
+      sut\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844289
+    m_Localized: "Magicky p\u0159ipojiteln\xFD na za\u010D\xE1tku v\xFDrazn\u011B
+      roz\u0161\xED\u0159en\xFD s medial ringem a hrboly s v\xFDstupky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844290
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD a v\xE1lcovit\xFD a p\u0159ed
+      za\u0161pi\u010Dat\u011Bl\xFDm koncem zes\xEDlen\xFD. v\xFDborn\xFD pro n\u011Bjak\xE9
+      to roztahov\xE1n\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38135240696844291
+    m_Localized: "Jednoduch\xE1, pro t\u011Blo bezpe\u010Dn\xE1, z hypoalergenn\xEDho
+      kovu vyroben\xE1 \u010Dinka do bradavek. (Ano do bradavek)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38140087290613760
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38744048708145152
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD z\xFA\u017Een\xFD do \u0161pi\u010Dky.
+      Koule jsou v t\u011Ble!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39595891181015040
+    m_Localized: "Kandiho p\xE9ro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40936863676551168
+    m_Localized: "Bra\u0161na na ocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41031671581560832
+    m_Localized: "Ostnat\xFD obojek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41057468396654592
+    m_Localized: "Vysok\xE9 podpatky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43625416088932352
+    m_Localized: "Nov\xE9 ulo\u017Een\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43643722850160640
+    m_Localized: "Ulo\u017Eit / Na\u010D\xEDst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43807311896563712
+    m_Localized: "Nov\xE1 hra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43807311925923840
+    m_Localized: "Vytvo\u0159te vlastn\xED hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54368470533984256
+    m_Localized: Pauza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58074778722422784
+    m_Localized: Kvalita slizu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73168528301674496
+    m_Localized: "Prsn\xED pumpy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80801858861977600
+    m_Localized: "ztopo\u0159en\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80801858895532032
+    m_Localized: "povadnut\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81276700606386176
+    m_Localized: Jas obrazovky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81558602722627584
+    m_Localized: "Textov\xFD chat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82622016043667456
+    m_Localized: Hlasitost Steamu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82631738259984384
+    m_Localized: "Hardwarov\xE1 akcelerace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83373358009864192
+    m_Localized: "V\xEDtejte v KoboldKare!\n\nKoboldKare je hra bez DRM (Spr\xE1va
+      digit\xE1ln\xEDch pr\xE1v). Proto bu\u010Fte pros\xEDm opatrn\xED p\u0159i
+      sd\xEDlen\xED hry. K hran\xED NEN\xCD zapot\u0159eb\xED \u017E\xE1dn\xFD crack
+      ani dll soubor!\n\nPosledn\xED aktualizace a informace k nim najdete na Steamu,
+      Itchi a Patreonu!\n\nMnohokr\xE1t d\u011Bkuji za podporu hry!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130814575387398144
+    m_Localized: "Zm\u011Bnit region"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130815543218851840
+    m_Localized: Hra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684424032256
+    m_Localized: "Nech vyr\u016Fst sv\xE9ho prvn\xEDho kobolda!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169600
+    m_Localized: "Voda a \u010Das zaru\u010D\xED r\u016Fst kobold\u016F. Postarej
+      se o to."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169601
+    m_Localized: "P\u0159eve\u010F kobolda pomoc\xED pneumatick\xE9 s\xEDt\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169602
+    m_Localized: "Upoutal jsi pozornost Dra\u010D\xEDho patrona... nyn\xED p\u0159eve\u010F
+      zbo\u017E\xED. Samoz\u0159ejm\u011B za odm\u011Bnu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169603
+    m_Localized: "Zasa\u010F vejce!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197833684470169604
+    m_Localized: "Dra\u010D\xED patron hled\xE1 schopn\xE9 pe\u010Dovatele! Zasa\u010F
+      vejce do nakyp\u0159en\xE9 p\u016Fdy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332828946432
+    m_Localized: "Kup si pr\u016Fmyslov\xFD ovocn\xFD mix\xE9r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500864
+    m_Localized: "Koboldi pot\u0159ebuj\xED nakrmit, najdi stavebn\xED smlouvu ve
+      stavebn\xED kancel\xE1\u0159i."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500865
+    m_Localized: "Nakrm koboldy ovocnou \u0161\u0165\xE1vou."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500866
+    m_Localized: "Koboldi pot\u0159ebuj\xED n\u011Bjak\xE9 j\xEDdlo, pou\u017Eij
+      ml\xFDnek na rozemlet\xED ovoce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500867
+    m_Localized: "Plemeno kobold\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500868
+    m_Localized: "Pot\u0159ebujeme dod\xE1vku m\xEDstn\xEDch kobold\u016F, za\u010Dn\u011Bme
+      oplodn\u011Bn\xEDm tv\xFDch kobold\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500869
+    m_Localized: "Dod\xE1n\xED kobold\u016F s velk\xFDm penisem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332862500870
+    m_Localized: "O\u010Dek\xE1v\xE1m dod\xE1n\xED kobold\u016F s obrovsk\xFDmi pt\xE1ky!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695168
+    m_Localized: "Dod\xE1n\xED kobold\u016F s velk\xFDmi prsy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695169
+    m_Localized: "O\u010Dek\xE1v\xE1m \u017Ee zvl\xE1dne\u0161 dod\xE1n\xED kobold\u016F
+      s velmi velk\xFDmi prsy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695170
+    m_Localized: "Napln\u011Bn\xED spermatem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695171
+    m_Localized: "Koboldi mus\xED b\xFDt napln\u011Bni a\u017E po okraj, v\xEDc o
+      tom diskutovat nehodl\xE1m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695172
+    m_Localized: Penetrovat skrz na skrz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695173
+    m_Localized: "Nenapad\xE1 m\u011B jak to vysv\u011Btlit, prost\u011B se o to
+      postarej."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695174
+    m_Localized: "Dod\xE1n\xED vykrmen\xFDch kobold\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695175
+    m_Localized: "Ml\xE9\u010Dn\xE9 koktejly jdou rovnou do stehen, je ve tv\xE9m
+      nejlep\u0161\xEDm z\xE1jmu m\xEDt p\xE1r supert\u011B\u017Ek\xFDch kobold\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695176
+    m_Localized: "Nakl\xE1st velmi velk\xE9 vejce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695177
+    m_Localized: "Je mi jedno co s n\xEDm pak ud\u011Bl\xE1\u0161, ale pot\u0159ebujeme
+      z kobolda dostat obrovsk\xE9 vejce!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695178
+    m_Localized: "Velk\xFD McLargehuge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589332866695179
+    m_Localized: "Ud\u011Blejte kobold tak vysok\xFD, \u017Ee se mohou pod\xEDvat
+      na d\u016Fm, tajn\xFD recept ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202939310757433344
+    m_Localized: Houba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202987527876431872
+    m_Localized: "Ovl\xE1d\xE1n\xED bok\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202998194956193792
+    m_Localized: "\xDAprava \xFArovn\u011B skr\u010Den\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603934085120
+    m_Localized: "P\u0159ezd\xEDvka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445248
+    m_Localized: "Mlet\xE9 hov\u011Bz\xED maso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445249
+    m_Localized: "T\u011Bsto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445250
+    m_Localized: Hamburger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445251
+    m_Localized: Mouka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209952603963445252
+    m_Localized: "Ananasov\xFD nanuk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210151247266238464
+    m_Localized: "Ban\xE1nov\xFD z\xE1kusek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210151247308181504
+    m_Localized: "ob\u0159ezan\xFD humanoidn\xED penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210156174176735232
+    m_Localized: Dort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210159659429449728
+    m_Localized: "Vaje\u010Dn\xFD ko\u0148ak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210159659429449729
+    m_Localized: Jogurt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210160988449198080
+    m_Localized: "Kol\xE1\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210162028410097664
+    m_Localized: "M\xEDchan\xE1 vejce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210162028410097665
+    m_Localized: "vaje\u010Dn\xFD pokrm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211626638807977984
+    m_Localized: Stachliger Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211626638837338112
+    m_Localized: "Ubit\xFD penis s masit\xFDmi m\u011Bkk\xFDmi ostny a n\xEDzko vis\xEDc\xEDma
+      koulema"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651584
+    m_Localized: "P\u0159\xEDkaz aktivuje nebo deaktivuje cheaty pro cel\xFD server"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651585
+    m_Localized: "Zobraz\xED tuto zpr\xE1vu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651586
+    m_Localized: "Zobraz\xED seznam v\u0161ech \u010Dinidel, p\u0159\xEDsad a vybaven\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651587
+    m_Localized: "D\xE1v\xE1 konkr\xE9tn\xED zadan\xE9 \u010Dinidlo, nebo p\u0159\xEDsadu.
+      Pou\u017Eij p\u0159\xEDkaz /list k nalezen\xED spr\xE1vn\xE9ho n\xE1zvu po\u017Eadovan\xE9ho
+      p\u0159edm\u011Btu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211654220131651588
+    m_Localized: "Vybav\xED konkr\xE9tn\xEDm vybaven\xEDm. Pou\u017Eijte p\u0159\xEDkaz
+      /list\_k nalezen\xED spr\xE1vn\xE9ho n\xE1zvu po\u017Eadovan\xE9ho p\u0159edm\u011Btu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211765989932060672
+    m_Localized: "\u017Debrovan\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211765989965615104
+    m_Localized: "\u017Debrovan\xFD penis s m\u011Bkk\xFDmi v\xFDstupky tvaru tal\xED\u0159e
+      a ostny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775633371136
+    m_Localized: "Nakl\xE1st vejce!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314176
+    m_Localized: "Vejce z obchodu nejsou tak dobr\xE1, oplodn\u011Bte n\u011Bjak\xE9ho
+      a pak ho dejte na porodn\xED stroj."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314177
+    m_Localized: "\u010Cas na buger!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314178
+    m_Localized: "Poslal jsem v\xE1m n\u011Bjak\xE9 z\xE1soby na ukucht\u011Bn\xED
+      burgeru, je t\u0159eba je zkombinovat pomoc\xED ml\xFDnku. Pot\xE9 t\xEDm nakrmte
+      kobolda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314179
+    m_Localized: "Odemkn\u011Bte dojic\xED stanici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314180
+    m_Localized: "Mus\xEDme roz\u0161\xED\u0159it n\xE1\u0161 v\xFDvoz potravin,
+      je t\u0159eba zakoupit smlouvu na doj\xEDc\xED stanici ve stavebn\xEDm \xFA\u0159adu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314181
+    m_Localized: "Vytvo\u0159te n\u011Bjak\xE9 ml\xE9\u010Dn\xE9 potraviny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314182
+    m_Localized: "Kobold\xED ml\xE9ko je nutri\u010Dn\u011B bohat\xE9, zkuste jej
+      kombinovat s jin\xFDmi v\u011Bcmi v kybl\xEDku, aby bylo mo\u017En\xE9 vytvo\u0159it
+      nov\xE1 j\xEDdla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314183
+    m_Localized: "\u0160\u0165avnat\xED koboldi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213469775675314184
+    m_Localized: "Pot\u0159ebuji, abyste provedli n\u011Bkolik experiment\u016F.
+      Nakrmte koboldy \u0161t\xE1vou z liku, melounu nebo ananasu. To by m\u011Blo
+      zp\u016Fsobit r\u016Fst kobold\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810347585536
+    m_Localized: Speleologie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945664
+    m_Localized: "C\xEDt\xEDm p\u0159\xEDtomnost ne\u010Deho temn\xE9ho v jeskyn\xEDch.
+      Jd\u011Bte to pro m\u011B prozkoumat!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945665
+    m_Localized: "Kupte si prohazova\u010D t\u011Bl."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945666
+    m_Localized: "Kupte si prohazova\u010D t\u011Bl od podiv\xEDna v jeskyni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945667
+    m_Localized: "Ach Ho Ho .. V\xEDtejte ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945668
+    m_Localized: "M\xE1m tu tajemstv\xED nesmrtelnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213551810376945669
+    m_Localized: "Za jistou sumu samoz\u0159ejm\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213569843006853120
+    m_Localized: "Podivn\xE1 v\u011Bda!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213569843006853121
+    m_Localized: "Jak\xE9 jste z\xEDskal zaj\xEDmav\xE9 za\u0159\xEDzen\xED. Be\u017Et\u011B
+      ho vyzkou\u0161et a nezapom\u011Bnt\u011B si k tomu vz\xEDt dal\u0161\xEDho
+      kobolda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567786430464
+    m_Localized: "Prost\u0159\xEDknut\xED skrz!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790592
+    m_Localized: "Zjist\u011Bte v\xEDc o zak\u0159iven\xED reality v Kobold\xEDm
+      t\u011Ble. Narv\u011Bte do kobolda p\xE9ro v\u011Bt\u0161\xED ne\u017E jeho
+      t\u011Blo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790593
+    m_Localized: "Budeme pot\u0159ebovat v\u011Bt\u0161\xED hn\xEDzdo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790594
+    m_Localized: "Chci aby jeden z va\u0161ich kobold\u016F nakladl ob\u0159\xED
+      vejce. Tak velk\xE9 jak jen dok\xE1\u017Eete!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790595
+    m_Localized: "Velk\xE9 a kulat\xE9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213767567815790596
+    m_Localized: "Pou\u017Eijte insemina\u010Dn\xED stroj k nafouknut\xED kobolda,
+      aby byl kr\xE1sn\u011B velk\xFD a kulat\xFD. Mysl\xEDm \u017Ee by mohlo b\xFDt
+      z\xE1bavn\xE9 sledovat je jak se kut\xE1l\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214255575602089984
+    m_Localized: "Vyho\u010Fte hr\xE1\u010De pomoc\xED ID u c\xEDlov\xE9ho hr\xE1\u010De.
+      Pou\u017Eijte \"/list players\" k zobrazen\xED ID u v\u0161ech hr\xE1\u010D\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223010832384
+    m_Localized: Ahoj Bud.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775424
+    m_Localized: "V\xEDtejte v podzem\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775425
+    m_Localized: "Ignorujte kou\u0159, nev\xE1hejte proch\xE1zet zbo\u017E\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775426
+    m_Localized: "Whoa! Jsi jako, opravdu nah\xFD."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775427
+    m_Localized: "Ka\u017Edop\xE1dn\u011B jen uh.... sv\xE9pomoc\xED mysl\xEDm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775428
+    m_Localized: "Kde asi schov\xE1v\xE1\u0161 sv\xE9 pen\xEDze..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775429
+    m_Localized: "Ahoj! Jsi z t\xE9 m\xEDstn\xED farmy \u017Ee? Hled\xE1\u0161 n\u011Bjak\xE9
+      vylep\u0161en\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775430
+    m_Localized: "Sta\u010D\xED vybrat n\u011Bco na zdi a zbytek za\u0159\xEDd\xEDme
+      my."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214537223052775431
+    m_Localized: "Uh... ubylo by t\u011B kdyby sis vzal alespo\u0148 kalhoty?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214891307416997888
+    m_Localized: "D\xE9lka pt\xE1ka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464138
+    m_Localized: "\u010Cty\u0159n\xE1sobn\xE9 pln\u011Bn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464139
+    m_Localized: "Nebylo by z\xE1bavn\xE9 narvat koboldovi do \xFAst 4 dilda najednou?!
+      Rozkazuji k proveden\xED tohoto pokusu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464140
+    m_Localized: Prodej mikro Kobolda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464141
+    m_Localized: "Pot\u0159ebuji velmi mali\u010Dk\xE9ho kobolda, kter\xFD by se
+      ve\u0161el do.... velmi mal\xE9ho prostoru. Jako intimn\xED \xFAdr\u017Eb\xE1\u0159e..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464142
+    m_Localized: "Ko\u010Dkotastrofa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464143
+    m_Localized: "pou\u017Eijte v\xFDbu\u0161niny na odkl\xEDzen\xED sutin z farmy,
+      bude tak v\xEDce m\xEDsta na p\u011Bstov\xE1n\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464144
+    m_Localized: "Vytvo\u0159te perfektn\xEDho kobolda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464145
+    m_Localized: "Rozhodl jsem se \u017Ee je \u010Das naj\xEDt si cho\u0165. Vytvo\u0159te
+      pro mne perfektn\xEDho kobolda!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464146
+    m_Localized: "Pokl\xE1d\xE1n\xED potrub\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464147
+    m_Localized: "Jsou perfektn\xED! Budu te\u010F... docela zanepr\xE1zdn\u011Bn...
+      proto v\xE1s povy\u0161uji na pozici Dozorce, budete m\xFDm jm\xE9nem nakupovat
+      Koboldy od jin\xFDch opatrovn\xEDk\u016F. Najd\u011Bte n\u011Bkoho kdo postav\xED
+      nezbytn\xE9 potrub\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464148
+    m_Localized: KoboldKare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464149
+    m_Localized: "Mysl\xEDm, \u017Ee te\u010F jsem tu \u0161\xE9f! M\u011Bl bych
+      zkusit zakoupit kobolda pomoc\xED nov\xE9ho pneumatick\xE9ho syst\xE9mu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464150
+    m_Localized: "V\xEDtejte! Je libo n\u011Bjak\xE1 semena ke koupi? M\xE1me v nab\xEDdce
+      i vejce!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464151
+    m_Localized: "Pot\u0159ebujete pomoci n\u011Bco naj\xEDt?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464152
+    m_Localized: "V\xEDtejte v kas\xEDnu! Jste tu pracovn\u011B, nebo se jen pobavit?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464153
+    m_Localized: "Z nedostatku oble\u010Den\xED h\xE1d\xE1m, \u017Ee tak trochu od
+      oboj\xEDho. M\u016F\u017Eete si zahr\xE1t Pachinko, t\u0159eba vypadne n\u011Bjak\xFD
+      u\u017Eite\u010Dn\xFD kousek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464154
+    m_Localized: "Neost\xFDchej se."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885794521088
+    m_Localized: "Tak\u017Ee ... pot\u0159ebuje\u0161 ode m\u011B n\u011Bco nov\xE9ho
+      ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464128
+    m_Localized: "Ud\u011Bl\xE1m to, samoz\u0159ejm\u011B za pat\u0159i\u010Dnou
+      sumu..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464129
+    m_Localized: "Tam jsou v\u011Bci venku a tak\xE9 za mnou, tak\u017Ee opravdu
+      vsta\u0148te tady, nemus\xED b\xFDt plach\xFD."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464130
+    m_Localized: "Hej k\xE1mo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464131
+    m_Localized: "Dnes to vypad\xE1 dob\u0159e, chce\u0161 pomoct n\u011Bco odnosit?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464132
+    m_Localized: "Ahoj! Pot\u0159ebuje\u0161 dne s n\u011B\u010D\xEDm pomoc?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464133
+    m_Localized: "Mysl\xED\u0161 si, \u017Ee vypad\xE1m dob\u0159e v klobouku?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464134
+    m_Localized: "Pot\u0159ebujete n\u011Bco postavit?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464135
+    m_Localized: "Tady je m\u016Fj obl\xEDben\xFD z\xE1kazn\xEDk!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464136
+    m_Localized: "Omlouv\xE1m se, u\u017E jsem V\xE1m prodal v\u0161e co jsem mohl
+      postavit. D\u011Bkuji \u017Ee jste tak loaj\xE1ln\xED z\xE1kazn\xEDk!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215233885836464137
+    m_Localized: "Budu tu st\xE1t pro p\u0159\xEDpad, \u017Ee by n\u011Bjak\xFD jin\xFD
+      nahat\xFD kobold cht\u011Bl postavit n\u011Bjak\xFD erotick\xFD stroj!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215247205985472512
+    m_Localized: "Hlavn\xED nab\xEDdka bezpe\u010Dnosti pr\xE1ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620096
+    m_Localized: "\u0160\u0165\xE1va!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620097
+    m_Localized: "Chci spoustu kobold\u016F od ka\u017Ed\xE9ho typu! Pro tebe to
+      znamen\xE1 nasb\xEDrat v\xEDce ovoce a ud\u011Blat mnohem v\xEDce d\u017Eus\u016F!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620098
+    m_Localized: "Tucet velk\xFDch, mo\u017En\xE1 v\xEDce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620099
+    m_Localized: "Chci m\xEDt v\xEDce velk\xFDch vajec! Dej se do toho!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620100
+    m_Localized: "Plemeno: Pand\u011Br\xE1\u010D!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620101
+    m_Localized: "Chci hodn\u011B opravdu obtloustl\xFDch Kobold\u016F, jsou velmi
+      u\u017Eite\u010Dn\xED jako pol\u0161t\xE1\u0159, nebo jako t\u011B\u017E\xEDtko."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620102
+    m_Localized: "Plemeno: P\xE1rkov\xE1 slavnost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620103
+    m_Localized: "Pot\u0159ebuji Koboldy s obrovsk\xFDm p\xE9rem, je to nezbytn\xE9
+      pro m\xE9 rostlinstvo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620104
+    m_Localized: "Plemeno: Ohromn\u011B McMegaObrovsk\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620105
+    m_Localized: "Chci v\xEDc ob\u0159\xEDch kobold\u016F! Jejich rozm\u011Bry je
+      \u010Din\xED u\u017Eite\u010Dn\xE9 na ut\xEDr\xE1n\xED st\u0159ech a strop\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620106
+    m_Localized: 'Plemeno: Megakozy!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783215620107
+    m_Localized: "Po\u0161lete mi spoustu megakoz\xE1ck\xFDch kobold\u016F! Jejich
+      obrovsk\xE9 vnady nejsou u\u017Eite\u010Dn\xE9, ale je sranda s nimi t\u0159epat!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783219814400
+    m_Localized: 'Plemeno: Itty Bitty'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216462783219814401
+    m_Localized: "Vytvo\u0159 spoustu mal\xFDch kobold\u016F. Jejich velikost a pru\u017En\xE1
+      t\u011Bl\xED\u010Dka je \u010Din\xED u\u017Eite\u010Dn\xE9! Stejn\u011B jako
+      znovupou\u017Eiteln\xFD kondom!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216470162770546688
+    m_Localized: Kobold Space Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216470162770546689
+    m_Localized: "Zaj\xEDmalo by m\u011B jak koboldi odol\xE1vaj\xED t\u0159en\xED
+      vzduchu! Zaho\u010F kobolda vzh\u016Fru ke hv\u011Bzd\xE1m!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216833884877803520
+    m_Localized: "Auto\u0159i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228010423070457856
+    m_Localized: "omezova\u010D nemoci z pohybu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231982103588818944
+    m_Localized: "Nepoda\u0159ilo se na\u010D\xEDst/ulo\u017Eit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231982103609790464
+    m_Localized: "Nelze na\u010D\xEDst/ulo\u017Eit! M\u016F\u017Ee b\xFDt zp\u016Fsobeno
+      jinou verz\xED hry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216333655481044992
+    m_Localized: "Nic jin\xE9ho tu pro v\xE1s nen\xED... prozat\xEDm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216333655518793728
+    m_Localized: "U\u017E tu pro v\xE1s nic nem\xE1m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248938687950692352
+    m_Localized: "P\u0159evr\xE1cen\xED osy-Y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482117312512
+    m_Localized: "zmen\u0161ova\u010D prsou"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482138284032
+    m_Localized: "zmen\u0161ova\u010D varlat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254924482138284033
+    m_Localized: "zmen\u0161ova\u010D p\xE9ra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258142671894794240
+    m_Localized: "M\xF3dov\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258400516968075264
+    m_Localized: "Konfigurace m\xF3d\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268693956486176768
+    m_Localized: "Stahov\xE1n\xED ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269043733614874624
+    m_Localized: Vybrat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277668489729613824
+    m_Localized: Instalace ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277970981017296896
+    m_Localized: "Na\u010D\xEDst ulo\u017Eenou pozici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277970981017296897
+    m_Localized: "Smazat ulo\u017Eenou pozici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278016973389373440
+    m_Localized: "P\u0159ed {0:plural:1 druh\xFD|{} sekundy}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 278016973418733568
+    m_Localized: "P\u0159ed {0:plural:1 minuta|{} minut}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 278016973418733569
+    m_Localized: "P\u0159ed {0:plural:1 hodina|{} hodiny}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 278016973422927872
+    m_Localized: "P\u0159ed {0:plural:1 den|{} dny}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 278016973422927873
+    m_Localized: "P\u0159ed {0:plural:1 rok|{} roky}"
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 278029437602570240
+    m_Localized: "Jsi si jist\xFD/\xE1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278029437631930368
+    m_Localized: "Odstran\u011Bn\xED ulo\u017Een\xE9 pozice je nevratn\xE9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278029437631930369
+    m_Localized: "Na\u010Dten\xEDm ulo\u017Een\xE9 pozice ztrat\xEDte postup sou\u010Dasn\xE9
+      hry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279799208752914432
+    m_Localized: "Modding vy\u017Eaduje 64bitov\xFD kompatibiln\xED syst\xE9m! Upgradujte
+      pros\xEDm sv\u016Fj opera\u010Dn\xED syst\xE9m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360320
+    m_Localized: "Povolen\xE9 penisy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360321
+    m_Localized: "Povoleno hrateln\xE9 postavy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279836570866360322
+    m_Localized: "\u017D\xE1dn\xE9 mody! P\u0159ihlaste se k odb\u011Bru mod\u016F
+      na parn\xED d\xEDln\u011B nebo je nainstalujte p\u0159\xEDmo do {ModManager.Path}."
+    m_Metadata:
+      m_Items:
+      - rid: 1602997996487704579
+  - m_Id: 280448613000617984
+    m_Localized: "Nepoda\u0159ilo se p\u0159ipojit k Steam, nebude mody automatick\xE9ho
+      stahov\xE1n\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295755658549579776
+    m_Localized: "Klepn\u011Bte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645498198769664
+    m_Localized: "Pln\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645495162093568
+    m_Localized: "Minim\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645284196990976
+    m_Localized: "Star\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645283295215616
+    m_Localized: "Testov\xFD funcs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645282502492160
+    m_Localized: HUD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645281676214272
+    m_Localized: "Zmen\u0161it ruce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645280883490816
+    m_Localized: "Realistick\xE1 velikost rukou"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645279906217984
+    m_Localized: "Re\u017Eim hry vsed\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320645277259612160
+    m_Localized: VR Mod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321348923228110848
+    m_Localized: "Mod v nejran\u011Bj\u0161\xED f\xE1zi v\xFDvoje\nObsahuje spoustu
+      chyb a probl\xE9m\u016F.\nA pros\xEDm, nastavte velikost Kobold na jednu nebo
+      m\xE9n\u011B."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1602997996487704579
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020279f8e71db030020e7a08e71db03012067def6b6db03002067def6b6db03012027def6b6db03002027def6b6db03002067dcf6b6db030220a7e9e02de203
