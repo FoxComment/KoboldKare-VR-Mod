@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Glass
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 0
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 1
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 20
+    impactSounds:
+    - {fileID: 8300000, guid: 00a13994e375d0f468b7a70aaebd9a72, type: 3}
+    - {fileID: 8300000, guid: 43a04af76b4e22744a9055e220dbbbc0, type: 3}
+    scrapeSound: {fileID: 0}
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 20
+    impactSounds:
+    - {fileID: 8300000, guid: e5f969afaa659d647b159fe9dbecc116, type: 3}
+    - {fileID: 8300000, guid: d026333b958ad464e823a58ed36bb734, type: 3}
+    - {fileID: 8300000, guid: b06ee50630be54642abc7c36a5d4de54, type: 3}
+    - {fileID: 8300000, guid: 9339fcaf18c88954dba3f64ceca0d84a, type: 3}
+    - {fileID: 8300000, guid: 2e366f9589a0bfc4cb8e763a970c62ed, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 262fed4f1dfbcaf49a775eea20574399, type: 2}

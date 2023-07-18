@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Snow
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 1
+  impactGroups:
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: 6737ebed4da93304580f21b28e5d0f87, type: 3}
+    - {fileID: 8300000, guid: 1df2816659b0179419cc76581934a657, type: 3}
+    - {fileID: 8300000, guid: e23d6fe27d8746544bd14b9b8c79bcbe, type: 3}
+    - {fileID: 8300000, guid: 99bc0877560a91a4f85277cd2b036c7f, type: 3}
+    - {fileID: 8300000, guid: 28fb4d0b3a5da8849b8d9a688d81f150, type: 3}
+    - {fileID: 8300000, guid: dc0549979f5d87d4592d4966b02ab7e6, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 112cd1621af56bb4dbb1dfa227ec70bc, type: 2}

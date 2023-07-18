@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Fluid
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.001
+  surfaceType: 1
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 5
+    impactSounds:
+    - {fileID: 8300000, guid: 31a36e90c32e49948b18b15be0a62983, type: 3}
+    - {fileID: 8300000, guid: 34b5d69732d5b5449a1817898a81d8f4, type: 3}
+    - {fileID: 8300000, guid: 2cc2f07bcb5f8e14790c99c28c2bb021, type: 3}
+    scrapeSound: {fileID: 8300000, guid: 16adab367800fe248bcd544417c4b10e, type: 3}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 80268556b65529c4ea3bcf42a211c6f0, type: 2}

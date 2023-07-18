@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Plastic
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 0
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 15
+    impactSounds:
+    - {fileID: 8300000, guid: fea37d45980079442bd56afbe33818a0, type: 3}
+    - {fileID: 8300000, guid: 93d234b2b62e406499ad6727412c24b1, type: 3}
+    - {fileID: 8300000, guid: b4d2851bebb3cc549a24a63fd177cf51, type: 3}
+    scrapeSound: {fileID: 8300000, guid: dc3b059c7c4ee6f4c9ddc7802e1df77a, type: 3}
+  - impactType: 1
+    isSortedByImpactVelocity: 1
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 15
+    impactSounds:
+    - {fileID: 8300000, guid: 37dc13e7cd58a0c42a0ba1ebbc1a5175, type: 3}
+    - {fileID: 8300000, guid: 5e00459b4da2cb944bf653bf97849419, type: 3}
+    - {fileID: 8300000, guid: db9b5d1b73592c84483d812421922982, type: 3}
+    - {fileID: 8300000, guid: 57d16b0b78483ab41b8e3df634f1e223, type: 3}
+    scrapeSound: {fileID: 8300000, guid: 23d13f52b5a01964e82ea27791642175, type: 3}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 99a8b73e39e83c3439d1655fb9b4b9aa, type: 2}

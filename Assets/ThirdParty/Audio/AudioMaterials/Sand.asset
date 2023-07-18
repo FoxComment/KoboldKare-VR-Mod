@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Sand
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 1
+  impactGroups:
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0.5
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: c2d77ce42ffb9fe42b5953bb2a717731, type: 3}
+    - {fileID: 8300000, guid: 5bd9ddd36184ee94a869cfa015734c1f, type: 3}
+    - {fileID: 8300000, guid: 0b5f180b206619e48a71d522461cf5f1, type: 3}
+    - {fileID: 8300000, guid: f54e985a9df5d084c83dee3742a09780, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 1613d85c4add01a4f9534ce9e3fb8367, type: 2}

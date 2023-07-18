@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 1
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: 6f9577dd783f0de4f8b4eb2b6591e905, type: 3}
+    - {fileID: 8300000, guid: e189c11adf02f6844af7f84f8d6b493a, type: 3}
+    scrapeSound: {fileID: 0}
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: b1fb243705a341f46b2d6e401ab09ff5, type: 3}
+    - {fileID: 8300000, guid: 5fb67a06c40e4e64a85c2c6554d0f6fd, type: 3}
+    - {fileID: 8300000, guid: 7523041fccb21fa438222e802bb561cd, type: 3}
+    - {fileID: 8300000, guid: 3103b756632188d4cb7f1cb005092026, type: 3}
+    - {fileID: 8300000, guid: 14b5d95ded9dc1242a4472bdb4e7956c, type: 3}
+    - {fileID: 8300000, guid: a716e98a4c75aa647be47ceb5b945193, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: b877dc03bdc3d7248b101df62d05a87c, type: 2}

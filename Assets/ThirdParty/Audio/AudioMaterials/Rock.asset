@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Rock
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.1
+  surfaceType: 0
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 1
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: a6f70ffd42221a347a842d7fb84d02c1, type: 3}
+    - {fileID: 8300000, guid: 694a53fae45622f4c8d2269c4d647399, type: 3}
+    - {fileID: 8300000, guid: 037d5049bd713dd448f545820951fe1d, type: 3}
+    - {fileID: 8300000, guid: e5c1f2ea7a813a7408be7faed3e6967e, type: 3}
+    scrapeSound: {fileID: 0}
+  - impactType: 1
+    isSortedByImpactVelocity: 1
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: 887f648090ad1814ca29c755e388e761, type: 3}
+    - {fileID: 8300000, guid: e9b2ebc743f64f54e88a6d7b0c22735c, type: 3}
+    - {fileID: 8300000, guid: 24d70d8d5dd91ce4788dffa0b8d52499, type: 3}
+    - {fileID: 8300000, guid: 5c099903d219d5e4894f2fceb00794c7, type: 3}
+    scrapeSound: {fileID: 0}
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 20
+    impactSounds:
+    - {fileID: 8300000, guid: 3f7c8d3bfb8df514b8ab2c70b0fc9e3c, type: 3}
+    - {fileID: 8300000, guid: fbb2065b00925ca4bbd71b9c5486943e, type: 3}
+    - {fileID: 8300000, guid: a51ea454c7f7e34489b27eaa95fb9f41, type: 3}
+    - {fileID: 8300000, guid: eafd4035db4226e4db3362d74c3fba41, type: 3}
+    - {fileID: 8300000, guid: 1ab32120f033b09498929b8caff29ece, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 3a6034b7919249640915befa2195166d, type: 2}

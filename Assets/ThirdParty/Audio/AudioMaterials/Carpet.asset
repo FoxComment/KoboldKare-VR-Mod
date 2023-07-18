@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Carpet
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 0
+  impactGroups:
+  - impactType: 2
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 20
+    impactSounds:
+    - {fileID: 8300000, guid: 06270b358cde4dc4b92c7dec95997d93, type: 3}
+    - {fileID: 8300000, guid: b0c63eb9c5744d14fb4670f6c01bcc9d, type: 3}
+    - {fileID: 8300000, guid: 19ec4d75410f4cb43b36de730edfa7e9, type: 3}
+    - {fileID: 8300000, guid: 813852ae2def90944baecbe94596ca28, type: 3}
+    - {fileID: 8300000, guid: 4f52202567e5f5642848b4f7b4e4eb21, type: 3}
+    scrapeSound: {fileID: 0}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 2fd9d85c73456ce44abf01332d5af513, type: 2}

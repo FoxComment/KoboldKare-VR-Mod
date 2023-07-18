@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Ragdoll
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.1
+  surfaceType: 1
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 0
+    minImpactMagnitude: 0.1
+    maxImpactMagnitude: 20
+    impactSounds:
+    - {fileID: 8300000, guid: 5314a14ba59126f4d900148519695cc8, type: 3}
+    - {fileID: 8300000, guid: c2b510242836db649acb549562fafc62, type: 3}
+    - {fileID: 8300000, guid: 2f8d6eca2098d8f4a956de13c7ad8e75, type: 3}
+    - {fileID: 8300000, guid: fdf3fb12f3c2f72428472ac754c2cecb, type: 3}
+    scrapeSound: {fileID: 8300000, guid: 285c65a6cc0ee1d4baf0ed903f17965a, type: 3}
+  associatedMaterials:
+  - {fileID: 13400000, guid: aed15ac3b782c8c4a8403ba6c6039f0e, type: 2}

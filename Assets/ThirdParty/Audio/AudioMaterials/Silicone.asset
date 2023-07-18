@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a19e1e6b5e3d9d448dfe506af226871, type: 3}
+  m_Name: Silicone
+  m_EditorClassIdentifier: 
+  minScrapeSpeed: 0.06
+  surfaceType: 1
+  impactGroups:
+  - impactType: 0
+    isSortedByImpactVelocity: 1
+    minImpactMagnitude: 0
+    maxImpactMagnitude: 10
+    impactSounds:
+    - {fileID: 8300000, guid: e5c3b72e5860feb4587845021b69926f, type: 3}
+    - {fileID: 8300000, guid: b20151fb010ad97429001b51385131df, type: 3}
+    - {fileID: 8300000, guid: 277f1f21b336d2e40bb211cc5bfaa2b0, type: 3}
+    - {fileID: 8300000, guid: 085d69157574c7242bb066b910bed202, type: 3}
+    - {fileID: 8300000, guid: b1199e5c24d4fe44f84356318e970858, type: 3}
+    scrapeSound: {fileID: 8300000, guid: 285c65a6cc0ee1d4baf0ed903f17965a, type: 3}
+  associatedMaterials:
+  - {fileID: 13400000, guid: 16a303d7eaab3bd4195ccce6fac4d794, type: 2}
