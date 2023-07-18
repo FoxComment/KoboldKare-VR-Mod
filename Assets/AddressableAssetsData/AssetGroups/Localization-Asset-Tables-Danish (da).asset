@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Danish (da)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Danish (da)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c7a26da734ef6294192e611038960b92
+  m_SerializeEntries:
+  - m_GUID: d757c3e04f669574cba715d875737d5c
+    m_Address: InputTexturesTable_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: bae434cba05d81d4b9cb5c181a2fbf2c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4da16b63be9e7754ea267ffc9a000ba8, type: 2}
+    - {fileID: 11400000, guid: 7cbe11f261f1c1b42b372fec5c80f9b8, type: 2}
