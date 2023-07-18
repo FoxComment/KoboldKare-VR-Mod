@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32869a6bcc471024096a008764badf8f, type: 3}
+  m_Name: PotassiumWaterReaction
+  m_EditorClassIdentifier: 
+  reactions:
+  - rid: 5882124624437706776
+  reactants:
+  - reactant: {fileID: 11400000, guid: f8e23aff621a5594a84b2a269e9bb894, type: 2}
+    coefficient: 1
+  - reactant: {fileID: 11400000, guid: 8aea7d57d8982ea448cb144fbf99bcb3, type: 2}
+    coefficient: 1
+  products:
+  - reactant: {fileID: 11400000, guid: e5adf269b9ec0d340b1c41167ec79b76, type: 2}
+    coefficient: 2
+  references:
+    version: 2
+    RefIds:
+    - rid: 5882124624437706776
+      type: {class: ExplosionReaction, ns: , asm: Assembly-CSharp}
+      data:
+        sizzle: {fileID: 11400000, guid: 4fd97e3165daac749909a0ef9780e307, type: 2}
+        explosion: {fileID: 315106991610496841, guid: 1eb252bc61f5bf94cb2976c62bebb0eb,
+          type: 3}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757ca47f379963246843acce6f01e18f, type: 3}
+  m_Name: Cum
+  m_EditorClassIdentifier: 
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:7b0547fe1d039e3448e29797d2fc4463
+    m_TableEntryReference:
+      m_KeyId: 516099198984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
+  emission: {r: 0, g: 0, b: 0, a: 0}
+  value: 0.5
+  metabolizationHalfLife: 60
+  cleaningAgent: 0
+  calories: 0.005
+  display: {fileID: 4074273719157461319, guid: a5e747e3c0e5bbc4388a00236396c0c5, type: 3}
+  consumptionEvent:
+    rid: 8920608498324865031
+  references:
+    version: 2
+    RefIds:
+    - rid: 8920608498324865031
+      type: {class: CumConsumption, ns: , asm: Assembly-CSharp}
+      data:
+        eggReagent: {fileID: 11400000, guid: cf45304516a585b41b686355a8ecd9b0, type: 2}

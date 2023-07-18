@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542cb7713e4b84f438cf220a5cc129c3, type: 3}
+  m_Name: BaseKobold
+  m_EditorClassIdentifier: 
+  statDisplayPrefab: {fileID: 1529015409145534236, guid: 87464727f8f50514f97108e67c2f5a91,
+    type: 3}
+  guid: 0
+  sprite: {fileID: 21300000, guid: 27712d2f9bbe5b64baceb5004c158549, type: 3}
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:7b0547fe1d039e3448e29797d2fc4463
+    m_TableEntryReference:
+      m_KeyId: 516095004716
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  statistics:
+  - statType: {fileID: 11400000, guid: 4ef054a320937ec43be6e51d83fef9f8, type: 2}
+    multiplier: 1
+    addAmount: 10
+  - statType: {fileID: 11400000, guid: 8e146bb9cad0476428ee3ba28f69b623, type: 2}
+    multiplier: 1
+    addAmount: 8
+  - statType: {fileID: 11400000, guid: e296b7bceeb317c49b0581a6cc26f79e, type: 2}
+    multiplier: 1
+    addAmount: 1
+  stacks: 0
+  duration: Infinity
+  references:
+    version: 1

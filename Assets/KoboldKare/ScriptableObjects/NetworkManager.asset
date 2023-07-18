@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b4445de9be59c4abcb295e34e9a3b6, type: 3}
+  m_Name: NetworkManager
+  m_EditorClassIdentifier: 
+  selectedMap: {fileID: 11400000, guid: e5bb806c8348428459b804bb5da6b78d, type: 2}
+  selectedPlayerPrefab: {fileID: 11400000, guid: 95eaa8b7f817151478392ea09909329f,
+    type: 2}
+  settings: {fileID: 11400000, guid: ccba35f9efc9e5740af2e3b0f78fa2e9, type: 2}
