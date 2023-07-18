@@ -1,0 +1,21 @@
+{
+    "name": "PhotonUnityNetworking",
+    "rootNamespace": "",
+    "references": [
+        "PhotonRealtime",
+        "SimpleJSON",
+        "KoboldKare.ISavable",
+        "NetStack",
+        "Unity.Addressables",
+        "Unity.ResourceManager"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
