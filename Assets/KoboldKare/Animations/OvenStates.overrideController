@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OvenStates
+  m_Controller: {fileID: 9100000, guid: e3f384a9142bef74f8c896d28a00f821, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 8e57acd8ac229474d9e8f7d62f44a393, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 90099a3710cabd14a970b8b9cf8562af, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1e89dd7772e51b34eb8a718dbdab0354, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a5d60d360786be646af5ccfda5266f3f, type: 2}
