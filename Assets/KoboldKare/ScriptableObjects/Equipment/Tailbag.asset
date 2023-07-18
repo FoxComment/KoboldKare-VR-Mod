@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd92f616eb846994e99a37d339d48784, type: 3}
+  m_Name: Tailbag
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 2be4c21908ed0e64e9e1089c274d8bba, type: 3}
+  hideInFirstPersonWhenWorn: 0
+  canManuallyUnequip: 1
+  slot: -1
+  groundPrefab:
+    gameObject: {fileID: 5605572581541272102, guid: 4471a7aea07acb443aa85ca878c62a45,
+      type: 3}
+    photonName: Tailbag
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:7b0547fe1d039e3448e29797d2fc4463
+    m_TableEntryReference:
+      m_KeyId: 40936863676551168
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:7b0547fe1d039e3448e29797d2fc4463
+    m_TableEntryReference:
+      m_KeyId: 38140087290613760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  wearables:
+  - wearablePrefab: {fileID: 5850756165232999182, guid: 3407d4fdead8e584581d867bb243fbab,
+      type: 3}
+    attachPoint: 6
+    stacks: 1
+    stackOffset: {x: 0, y: 0.2, z: 0}
+  references:
+    version: 2
+    RefIds: []

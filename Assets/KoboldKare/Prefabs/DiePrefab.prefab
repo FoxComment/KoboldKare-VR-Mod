@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2324341566642796016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2324341566642796017}
+  - component: {fileID: 532780702357760958}
+  - component: {fileID: 7663342198273234778}
+  - component: {fileID: 2674400673954768141}
+  m_Layer: 0
+  m_Name: DiePrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2324341566642796017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324341566642796016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &532780702357760958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324341566642796016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: b80237a58ac8c22458251d7c9dcacf88,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c47a730b-b20e-4586-a6db-3b34af9275fa
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b550e176-87c2-4c76-9811-7066eeeb09d2
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 466a5d54-bc44-4eea-b7a2-229c8fc5acee
+    m_ActionName: Player/Walk[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 499021cf-bcc5-4511-a370-0732194f6355
+    m_ActionName: Player/Gib[/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2998db3d-b369-40c0-b490-e5a46f321d90
+    m_ActionName: Player/Use[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c9bd1f8a-f506-4c88-979a-3a57f51905d5
+    m_ActionName: Player/ActivateGrab[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2674400673954768141}
+        m_TargetAssemblyTypeName: DiePrefab, Assembly-CSharp
+        m_MethodName: Remove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d6c8d9e7-d9ff-4602-b4de-f39ebd163c20
+    m_ActionName: Player/Grab[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f8cabfe-1e20-48c9-b3d0-47c623386416
+    m_ActionName: Player/Grab Push and Pull[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5b135bde-6ae9-4419-bb3e-c82fcd26909a
+    m_ActionName: Player/Crouch[/Keyboard/leftCtrl]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca49f33d-5d9f-4409-b5ce-882d7bf7e519
+    m_ActionName: Player/View Stats[/Keyboard/tab]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d1c63e44-0f6f-49b6-b8bc-a206fae3265f
+    m_ActionName: Player/Rotate[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 97373a1c-04e4-4551-a3a3-5def8bbde73e
+    m_ActionName: Player/Unfreeze[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e7b34c3-4bd8-41bc-8c70-c70de46c2881
+    m_ActionName: Player/Ragdoll[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 22a581ce-7104-4e66-ac55-3cb2b934e5b1
+    m_ActionName: Player/SwitchGrabMode[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bbcd3efa-011d-46f8-96c1-cf5b735277d3
+    m_ActionName: Player/Look
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a37ad977-a4db-4122-ae39-69e33d0aced5
+    m_ActionName: Player/FirstPerson[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ecec02b0-8b8d-4552-826a-2548e449e804
+    m_ActionName: Player/ThirdPerson[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1da2479b-dd82-41e2-9c0a-f2f7aeaa37c0
+    m_ActionName: Player/FreeCamera[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d7fe616d-00f7-40e6-a446-4ad06fd35f49
+    m_ActionName: Player/LockedCamera[/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e03661a-ac84-473e-8440-67a0916e2a21
+    m_ActionName: Player/SwitchCamera[/Keyboard/c]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d5c81fd-1dac-483f-86a7-029428d0cd45
+    m_ActionName: Player/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b954f352-cb6f-448d-8d72-62718c2d2bb4
+    m_ActionName: Player/ErectionUp[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 91fcb00e-c968-4794-98aa-ab55c01d4bb1
+    m_ActionName: Player/ErectionDown[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a1a84824-b8f9-4a96-8efe-17dde284b118
+    m_ActionName: Player/Chat[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 26006a56-9e9f-434a-b8ee-c6fbaf5ff76a
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bce1f260-5d3b-4a71-9eb3-b838d8ae5da5
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4f2fd457-2ad9-4a32-939b-ac4d85c1fe65
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a968da16-d642-4db6-8603-bf1be821dcf6
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 796e1fcb-8fbb-4d0e-b674-4f0643e6635a
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 648c7863-c09b-4baf-9db9-be04dec870a0
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4e08df6e-bf07-4de1-bd41-966ddf4af3c3
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8dbc533e-3985-4da3-b2ac-c38571efa955
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 805373ef-2d27-495d-ba33-47d36eeceaa3
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 93b70ecd-ff86-405c-bc05-200b19df99d2
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7510dd96-6f61-4110-9d86-de97aa3cee5e
+    m_ActionName: Player/UnfreezeAll[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4090fef1-e70e-46df-ba96-6d72d632fb7c
+    m_ActionName: Player/Look[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e17d208d-1160-491d-9bcd-96e1f73906fd
+    m_ActionName: Player/HipControl[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: df1a2b98-1e73-45dd-a64b-d3d0c4be7b39
+    m_ActionName: Player/CrouchAdjust[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b360048e-3170-4172-8c7f-120562864941
+    m_ActionName: Player/ResetHip[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a0e1daf4-0f59-49b5-878f-be5463f6e2e9
+    m_ActionName: Player/GyroEnable
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &7663342198273234778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324341566642796016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cefe60a1e61d44f982b3a8c1d1d259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenOffset: {x: 0.5, y: 0.5}
+  desiredDistanceFromPivot: 1
+--- !u!114 &2674400673954768141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324341566642796016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61768245414cfd24e8f0fec49f2db16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieConfig:
+    rid: 1602997839558606865
+  references:
+    version: 2
+    RefIds:
+    - rid: 1602997839558606865
+      type: {class: OrbitCameraBasicConfiguration, ns: , asm: com.naelstrof.orbitcam}
+      data:
+        pivot: {fileID: 7663342198273234778}
+        cullingMask:
+          serializedVersion: 2
+          m_Bits: 3867115319

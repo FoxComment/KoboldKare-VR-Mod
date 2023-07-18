@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TentacleDeform
+  m_Shader: {fileID: 4800000, guid: c72fd750ab6579a4582c56fb46b599d5, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ADD_PRECOMPUTED_VELOCITY
+  - _ALPHATEST_ON
+  - _DISABLE_SSR
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentBackface
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 298f48b1b9fda084db90f3ecb7bc5be0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DickShineMask:
+        m_Texture: {fileID: 2800000, guid: a56831baa8b5cc24e8fa926f76711385, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DickShineNormal:
+        m_Texture: {fileID: 2800000, guid: e97eea6fed608224ea68d42a642e92ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 08362977ea363b04a83d5420e9a24bd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 3aeed55315271494eb5b4c057102b4ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBCloud:
+        m_Texture: {fileID: 2800000, guid: 876e0b6a34019554aaa714bc3f510f10, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 1
+    - _AlphaCutoff: 0.5
+    - _AlphaCutoffEnable: 1
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
+    - _BlendshapeMultiplier: 1
+    - _BumpScale: 1
+    - _Confine: 0
+    - _ConfineAmount: 0
+    - _ConfineProgress: 0
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _CumAmount: 0
+    - _CumProgress: 99
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedNormalMode: 0
+    - _DstBlend: 0
+    - _EnableFogOnTransparent: 1
+    - _Float0: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoleProgress: 99
+    - _HueShift: 0
+    - _Length: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _ModelScale: 2
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PenetrationProgress: 0
+    - _Pull: 1
+    - _PullAmount: 0
+    - _PullProgress: 0
+    - _ReceivesSSR: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _Scaler: 100
+    - _ShineProgress: 0.481
+    - _ShinyProgress: 0
+    - _SlicknessProgress: 0.15
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SquisProgress: 0
+    - _Squish: 0
+    - _SquishAmount: 0
+    - _SquishDistance: 0.25
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 2
+    - _StencilRefMV: 32
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SurfaceType: 0
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 1
+    - _UVSec: 0
+    - _UseShadowThreshold: 0
+    - _WetProgress: 10
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 3
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CumColor: {r: 1, g: 1, b: 1, a: 0.101960786}
+    - _DickForward: {r: 1.778769e-20, g: 1, b: 3.3750777e-14, a: 0}
+    - _DickOrigin: {r: 0, g: 0, b: 0, a: 0}
+    - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HueBrightnessContrastSaturation: {r: 0, g: 0.5019608, b: 0.5019608, a: 0.5019608}
+    - _ModelScale: {r: 1, g: 1, b: 1, a: 0}
+    - _OrifaceNormal: {r: 0, g: 1, b: 0, a: 0}
+    - _OrifacePosition: {r: 0, g: 0, b: 10, a: 0}
+    - _forward: {r: 0, g: 1, b: 0, a: 0}
+    - _p0: {r: 0, g: 0, b: 0, a: 0}
+    - _p1: {r: 0, g: 0.5, b: 0, a: 0}
+    - _p2: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _p3: {r: 0.5, g: 0, b: 0, a: 0}
+    - _right: {r: 1, g: 0, b: 0, a: 0}
+    - _up: {r: 0, g: 0, b: 1, a: 0}
+  m_BuildTextureStacks: []

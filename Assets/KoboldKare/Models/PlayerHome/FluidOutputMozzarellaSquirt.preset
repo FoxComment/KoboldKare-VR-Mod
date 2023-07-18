@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FluidOutputMozzarellaSquirt
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: df2846796e223b048ba2505134694c57,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particlesPerSecondPerStream
+    value: 60
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: type
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: squirtDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].value
+    value: 0.5081444
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].inSlope
+    value: 6.4932303
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].outSlope
+    value: 6.4932303
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[0].outWeight
+    value: 0.20415246
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].time
+    value: 0.11753602
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].value
+    value: 0.9251811
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].inSlope
+    value: 1.3998759
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].outSlope
+    value: 1.3998759
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[1].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].value
+    value: 0.26473722
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].inSlope
+    value: -0.7484089
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].outSlope
+    value: -0.7484089
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_Curve.Array.data[2].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeCurve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].value
+    value: 0.5146599
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].inSlope
+    value: 5.856609
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].outSlope
+    value: 5.856609
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[0].outWeight
+    value: 0.19949955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].time
+    value: 0.14274007
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].value
+    value: 0.95113313
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].inSlope
+    value: 0.9727319
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].outSlope
+    value: 0.9727319
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[1].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].time
+    value: 0.99780273
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].inSlope
+    value: -1.1123549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].outSlope
+    value: -1.1123549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_Curve.Array.data[2].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityCurve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityMultiplier
+    value: 0.056
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: velocityVariance
+    value: 0.042
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: effect
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: particleMultiplier
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumeSprayedPerFire
+    value: 3.4028235e+38
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: audioSource
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: splashEffect
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hoseEffect
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: volumePerSecond
+    value: 4
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
