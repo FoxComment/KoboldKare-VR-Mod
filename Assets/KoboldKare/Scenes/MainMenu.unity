@@ -3073,6 +3073,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3408914889657029071, guid: 364d21a5e4c0c464784d42f01767a083,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933655
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408914889657029071, guid: 364d21a5e4c0c464784d42f01767a083,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.60874563
+      objectReference: {fileID: 0}
     - target: {fileID: 7561188790633409797, guid: 364d21a5e4c0c464784d42f01767a083,
         type: 3}
       propertyPath: m_Name
@@ -14017,7 +14027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KoboldkareVR v7.6.23
+  m_text: KoboldkareVR v7.26.23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad3ac2ba3a1829f489ca724ebd15a8da, type: 2}
   m_sharedMaterial: {fileID: -6880827330968752010, guid: ad3ac2ba3a1829f489ca724ebd15a8da,

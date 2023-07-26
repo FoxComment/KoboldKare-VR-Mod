@@ -9,7 +9,9 @@ public class LoadingListener : MonoBehaviour {
         LevelLoader.instance.sceneLoadEnd += SceneLoadEnd;
         gameObject.SetActive(false);
     }
-    void SceneLoadStart() {
+    void SceneLoadStart()
+    {
+        FoxVRLoader.endedBlackout = false;
         gameObject.SetActive(true);
         gameObject.GetComponent<CanvasGroup>().alpha = 1f;
     }

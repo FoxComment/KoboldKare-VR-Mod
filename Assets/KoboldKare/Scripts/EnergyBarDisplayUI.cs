@@ -9,12 +9,13 @@ public class EnergyBarDisplayUI : MonoBehaviour
     [SerializeField] private RectTransform filledBar;
     [SerializeField] private RectTransform barBackground;
     [SerializeField] private AnimationCurve bounceCurve;
-    [SerializeField] private UnityEngine.UI.Image energyCircleVR;
+    [SerializeField] private UnityEngine.UI.Image vrAdvancedBar;
+    [SerializeField] private UnityEngine.UI.Image vrCompactBar;
     private Kobold targetKobold;
 
     private float targetWidth;
     private float targetBackgroundWidth;
-    private bool running = false;
+    private bool running = false;   
     private void OnEnable()
     {
         targetKobold = GetComponentInParent<Kobold>();
@@ -34,7 +35,8 @@ public class EnergyBarDisplayUI : MonoBehaviour
         targetWidth = Mathf.Min(energy * energyToPixel, 3000f);
         targetBackgroundWidth = Mathf.Min(maxEnergy * energyToPixel, 3000f);
 
-        energyCircleVR.fillAmount = Mathf.Lerp(1, 0, (maxEnergy - energy) / maxEnergy);               //VR 
+       // vrCompactBar.fillAmount = Mathf.Lerp(1, 0, (maxEnergy - energy) / maxEnergy);             
+       // vrAdvancedBar.fillAmount = Mathf.Lerp(1, 0, (maxEnergy - energy) / maxEnergy);
 
         if (!running)
         {
@@ -55,6 +57,10 @@ public class EnergyBarDisplayUI : MonoBehaviour
                 filledBar.sizeDelta.y);
             barBackground.sizeDelta = new Vector2(Mathf.Clamp(Mathf.LerpUnclamped(startBackgroundWidth, targetBackgroundWidth, bounceSample), 0f, float.MaxValue),
                 barBackground.sizeDelta.y);
+
+            vrCompactBar.fillAmount = Mathf.Clamp(Mathf.LerpUnclamped((targetBackgroundWidth - startWidth) / targetBackgroundWidth, (targetBackgroundWidth - targetWidth) / targetBackgroundWidth, bounceSample), 0f, 1); 
+            vrAdvancedBar.fillAmount = Mathf.Clamp(Mathf.LerpUnclamped((targetBackgroundWidth - startWidth) / targetBackgroundWidth, (targetBackgroundWidth - targetWidth) / targetBackgroundWidth, bounceSample), 0f, 1); 
+
             yield return null;
         }
         filledBar.sizeDelta = new Vector2(targetWidth, filledBar.sizeDelta.y);

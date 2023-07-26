@@ -77,19 +77,22 @@ public class FoxVRLoader : MonoBehaviour
     private GameObject antiSickOverlay;
 
     //private bool streamingCameraIsActive;
-    public static bool activateHandTracking;
-    public static bool endedBlackout; 
-    public static bool koboldIsAvailable;
     public static float koboldScale;
+
     public static float triggerSqueezeR;
     public static float gripSqueezeR;
     public static float triggerSqueezeL;
     public static float gripSqueezeL;
     public static Vector2 thumbMoveR;
     public static Vector2 thumbMoveL;
+
     static string lastLoadedScene;
+    public static bool activateHandTracking;
+    public static bool koboldIsAvailable;  
+    public static bool endedBlackout;
     public static bool gameLoaded;
-    private bool firstLaunh;
+    private bool firstLauhch;
+
     [SerializeField] InputActionReference triggerR;
     [SerializeField] InputActionReference triggerL;
     [SerializeField] InputActionReference gripR;
@@ -362,16 +365,16 @@ public class FoxVRLoader : MonoBehaviour
     {
 
         if (activeCamera == null) return;
-        /*
+        
         Vector3 cursorPoint = Mouse.current.position.ReadValue(); 
         Vector3 lookPoint = activeCamera.ScreenToWorldPoint(new Vector3(cursorPoint.x, cursorPoint.y, .7f),
-            Camera.MonoOrStereoscopicEye.Mono);
+        Camera.MonoOrStereoscopicEye.Mono);
         mousePointerTRA.position = lookPoint;
-        mousePointerTRA.localPosition = new Vector3(mousePointerTRA.localPosition.x, mousePointerTRA.localPosition.y, 0); 
+        mousePointerTRA.localPosition = new Vector3(mousePointerTRA.localPosition.x, mousePointerTRA.localPosition.y, 0);   //Dumb thing...
                             
-                                    Just... dum
+                                  
             
-        */ 
+        
         if (LevelLoader.loadingLevel || !koboldIsAvailable) return;
          
          antiSickOverlay.transform.position = activeCamera.transform.position;  //Jittery in 3DOF, same im Update and LateUpdate
