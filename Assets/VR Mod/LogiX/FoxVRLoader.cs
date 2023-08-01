@@ -35,8 +35,7 @@ public class FoxVRLoader : MonoBehaviour
     [SerializeField] UnityEngine.EventSystems.EventSystem xrEvents;
     [SerializeField] UnityEngine.EventSystems.EventSystem uiEvents;
 
-
-    [SerializeField] BlackoutScreen boSc; //Temproral
+  
     [SerializeField]
     private Transform playerFeetCenter;
     private GameObject controlledKoboldOBJ;
@@ -52,7 +51,7 @@ public class FoxVRLoader : MonoBehaviour
     [SerializeField]
     private Transform mousePointerTRA;
     [SerializeField]
-    private GameObject xrInteractor;
+    private UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager xrInteractor;
     [SerializeField]
     private GameObject[] controllerModelsOBJs;
     [SerializeField]
@@ -116,8 +115,6 @@ public class FoxVRLoader : MonoBehaviour
 
     void SetupForGame()
     {
-        xrInteractor.SetActive(true);
-
         gameManOBJ.transform.localScale = Vector3.one; 
 
         StopCoroutine(activeBoldManager);
@@ -137,8 +134,6 @@ public class FoxVRLoader : MonoBehaviour
 
     void SetupForMenu()
     {
-        xrInteractor.SetActive(true);
-
         gameManOBJ.transform.localScale = Vector3.one;
         gameManOBJ.transform.position = Vector3.zero;
         xrSetupOBJ.transform.parent.localScale = Vector3.one * .75f;
@@ -159,21 +154,20 @@ public class FoxVRLoader : MonoBehaviour
     IEnumerator LevelTracker()
     {
         print("Started Tracking Levels");
-
+        xrEvents.enabled = true;
         uiEvents.enabled = false;
         menuPositioner = ResetMenuPos();
         activeBoldManager = GetActiveBold(); 
 
         while (true)
         {
-
             lastLoadedScene = SceneManager.GetActiveScene().name;
 
             StopCoroutine(activeBoldManager);
             StopCoroutine(menuPositioner);
+
             menuPositioner = ResetMenuPos();
-            //streamingCameraOBJ.SetActive(false);
-            xrInteractor.SetActive(false);
+
             activateHandTracking = false;
             
             if (lastLoadedScene == "MainMenu")
@@ -181,12 +175,11 @@ public class FoxVRLoader : MonoBehaviour
                 ControllerVisibility(true);
                 activeCamera = vrCamera;
                 vrCamera.enabled = true;
-                Invoke("SetupForMenu", 6);
+                Invoke("SetupForMenu", 2);
             }
             else
             {
-                uiEvents.enabled = true; 
-                Invoke("SetupForGame", 6);
+                Invoke("SetupForGame", 4);
             }
 
             print("Successfully loaded - " + SceneManager.GetActiveScene().name);
@@ -338,18 +331,8 @@ public class FoxVRLoader : MonoBehaviour
 
     #endregion
 
-    public void StreamingCameraToggle()
-    {
-       // streamingCameraIsActive = !streamingCameraIsActive;
 
-        //streamingRT.height = Screen.height/2;
-        //streamingRT.width = Screen.width/2;
-
-        //streamingCameraOBJ.SetActive(streamingCameraIsActive);
-    }
-
-
-    void OptimizeVRMode()
+    private void OptimizeVRMode()
     {
         containLights = GameObject.FindObjectsOfType<Light>();
         foreach (Light item in containLights)
@@ -358,26 +341,35 @@ public class FoxVRLoader : MonoBehaviour
 
 
 
-
-
-
     private void FixedUpdate()
     {
 
         if (activeCamera == null) return;
-        
-        Vector3 cursorPoint = Mouse.current.position.ReadValue(); 
+
+        if (LevelLoader.loadingLevel || !koboldIsAvailable) return;
+
+        antiSickOverlay.transform.position = activeCamera.transform.position;  //Jittery in 3DOF, same im Update and LateUpdate
+
+        if (!activateHandTracking) return;
+
+        xrSetupOBJ.transform.position = controlledKoboldOBJ.transform.position - (Vector3.up * .72f);
+        orbitCamera.transform.rotation = vrCamera.transform.rotation;
+    }
+
+
+
+    private void LateUpdate()
+    {
+
+        if (activeCamera == null) return;
+
+        Vector3 cursorPoint = Mouse.current.position.ReadValue();
         Vector3 lookPoint = activeCamera.ScreenToWorldPoint(new Vector3(cursorPoint.x, cursorPoint.y, .7f),
         Camera.MonoOrStereoscopicEye.Mono);
         mousePointerTRA.position = lookPoint;
-        mousePointerTRA.localPosition = new Vector3(mousePointerTRA.localPosition.x, mousePointerTRA.localPosition.y, 0);   //Dumb thing...
-                            
-                                  
-            
-        
+        mousePointerTRA.localPosition = new Vector3(mousePointerTRA.localPosition.x, mousePointerTRA.localPosition.y, mousePointerTRA.localPosition.z);   //Dumb thing...
+
         if (LevelLoader.loadingLevel || !koboldIsAvailable) return;
-         
-         antiSickOverlay.transform.position = activeCamera.transform.position;  //Jittery in 3DOF, same im Update and LateUpdate
 
         if (!activateHandTracking) return;
 
@@ -390,28 +382,30 @@ public class FoxVRLoader : MonoBehaviour
         //                                                                             //
         //      so i can use svr bindings and controller models                        //                                                                              
         /////////////////////////////////////////////////////////////////////////////////
-        
+
 
 
 
         gripSqueezeL = gripL.action.ReadValue<float>();
         gripSqueezeR = gripR.action.ReadValue<float>();
-        triggerSqueezeL= triggerL.action.ReadValue<float>();
+        triggerSqueezeL = triggerL.action.ReadValue<float>();
         triggerSqueezeR = triggerR.action.ReadValue<float>();
         //thumbMoveR = touchR.action.ReadValue<Vector2>();
         //thumbMoveL = touchL.action.ReadValue<Vector2>();  
 
-
         playerFeetCenter.localPosition = new Vector3(GetActiveCameraTransform().localPosition.x, 0, GetActiveCameraTransform().localPosition.z);    //Temporal thing
-        playerFeetCenter.rotation = Quaternion.Euler(90, vrCamera.transform.rotation.eulerAngles.y,0);                                              //Temporal thing
+        playerFeetCenter.rotation = Quaternion.Euler(90, vrCamera.transform.rotation.eulerAngles.y, 0);                            //Temporal thing
+
+    }
 
 
-        xrSetupOBJ.transform.position = controlledKoboldOBJ.transform.position - (Vector3.up*.72f);
-        orbitCamera.transform.rotation = vrCamera.transform.rotation;
-    } 
 
     #endregion
-     IEnumerator GetActiveBold()
+
+
+
+
+    IEnumerator GetActiveBold()
     {
         while (true)
         {
@@ -447,24 +441,28 @@ public class FoxVRLoader : MonoBehaviour
         }
     }
 
+
+
+
     #region Camera Related
 
 
 
-
     public void GetCamera(bool _inMenu)
-    { 
+    {
 
-        controllersTRAs[0].gameObject.SetActive(!seatedMode);    // Setup controllers
-        controllersTRAs[1].gameObject.SetActive(!seatedMode);    //  for vr/desktop
+        OrbitCamera.SetSeatedMode(seatedMode);
 
         vrCamera.GetComponent<AudioListener>().enabled = !seatedMode;
+
+        ReloadControllers();
 
         if (_inMenu)
         {  
 
             if (!seatedMode)
-            { 
+            {
+
                 activeCamera = vrCamera;
 
                 xrSetupOBJ.transform.position = new Vector3(.2f, -1.427f, -10.15f);     //User pose for main menu idk...
@@ -484,6 +482,7 @@ public class FoxVRLoader : MonoBehaviour
             orbitCamera = GameObject.Find("OrbitCamera").GetComponent<Camera>();
 
             orbitCamera.GetComponent<AudioListener>().enabled = seatedMode;
+
             orbitCamera.enabled = seatedMode;
             vrCamera.enabled = !seatedMode;
 
@@ -491,30 +490,34 @@ public class FoxVRLoader : MonoBehaviour
             {
                 if (orbitCamera.GetComponent<TrackedPoseDriver>() != null) Destroy(orbitCamera.GetComponent<TrackedPoseDriver>());
 
+                vrCamera.gameObject.GetComponent<TrackedPoseDriver>().trackingType = TrackedPoseDriver.TrackingType.RotationAndPosition;
                 activeCamera = vrCamera;
 
                 controlledKoboldOBJ.transform.parent.GetChild(0).GetComponent<HandIK>().controlledByPlayer = true;
-                controlledKoboldOBJ.transform.parent.GetChild(0).GetComponent<FootIK>().controlledByPlayer = true;
-                activateHandTracking = true;
 
                 SetupUIOverlays(_inMenu);
-
+                 
                 return;
             }
+            else
+            {
+                activeCamera = orbitCamera;
+                //activeCamera = vrCamera;
+                //vrCamera.gameObject.GetComponent<TrackedPoseDriver>().trackingType = TrackedPoseDriver.TrackingType.RotationOnly;
+                SetupUIOverlays(_inMenu);
+                 
+                if (orbitCamera.GetComponent<TrackedPoseDriver>() != null) return;
 
-            activeCamera = orbitCamera; 
+                orbitCamera.gameObject.AddComponent<TrackedPoseDriver>();
+                orbitCamera.gameObject.GetComponent<TrackedPoseDriver>().trackingType = TrackedPoseDriver.TrackingType.RotationOnly;
 
-            SetupUIOverlays(_inMenu);
+            }
 
-            if (orbitCamera.GetComponent<TrackedPoseDriver>() != null) return;
-
-            orbitCamera.gameObject.AddComponent<TrackedPoseDriver>();
-            orbitCamera.gameObject.GetComponent<TrackedPoseDriver>().trackingType = TrackedPoseDriver.TrackingType.RotationOnly;
         } 
     }
 
 
-    void SetupUIOverlays(bool _inMenu)//ss
+    void SetupUIOverlays(bool _inMenu)
     {
         masterCanvOBJ.GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
 
@@ -560,8 +563,49 @@ public class FoxVRLoader : MonoBehaviour
         fpsCanvOBJ.transform.parent.localScale = Vector3.one * .65f / (koboldScale);
     }
 
+
+    private void StreamingCameraToggle()
+    {
+        // streamingCameraIsActive = !streamingCameraIsActive;
+
+        //streamingRT.height = Screen.height/2;
+        //streamingRT.width = Screen.width/2;
+
+        //streamingCameraOBJ.SetActive(streamingCameraIsActive);
+    }
+
+
+
     #endregion
 
+
+
+
+    #region Controllers Stuff
+
+
+
+    private void ReloadControllers()
+    {
+        StartCoroutine(RefreshControllerInteractor());
+
+        activateHandTracking = !seatedMode;
+
+        controllersTRAs[0].gameObject.SetActive(!seatedMode);
+        controllersTRAs[1].gameObject.SetActive(!seatedMode);
+
+    }
+
+
+    private IEnumerator RefreshControllerInteractor()
+    {
+        xrInteractor.enabled = false;
+
+        yield return new WaitForEndOfFrame();
+
+        xrInteractor.enabled = true;
+    }
+    
 
     void ControllerVisibility(bool _visible)
     {
@@ -570,6 +614,12 @@ public class FoxVRLoader : MonoBehaviour
         controllerModelsOBJs[0].SetActive(_visible);
         controllerModelsOBJs[1].SetActive(_visible); 
     }
+
+
+
+    #endregion
+
+
 
 
     IEnumerator Start()
@@ -716,35 +766,8 @@ public class FoxVRLoader : MonoBehaviour
     void OnTestFunctionsChanged(int value)
     { 
         upcommingFeatures = (value == 1);
-    }
-    /*
-    void SceneLoadEnd()
-    {
+    } 
 
-        if (lastLoadedScene == "MainMenu")
-        {
-            ControllerVisibility(true);
-            activeCameraOBJ = vrCamOBJ;
-            vrCamOBJ.GetComponent<Camera>().enabled = true;
-            Invoke("SetupForMenu", 0.1f);
-        }
-        else
-        {
-            Invoke("SetupForGame", 0.1f);
-        }
-    }*/
-
-
-    /*
-    void SceneLoadStart()
-    {
-        StopCoroutine(activeBoldManager);
-        StopCoroutine(menuPositioner);
-        streamingCameraOBJ.SetActive(false);
-        activateHandTracking = false;
-        menuPositioner = ResetMenuPos();
-        lastLoadedScene = Application.loadedLevelName;
-    }*/
 
 
 }

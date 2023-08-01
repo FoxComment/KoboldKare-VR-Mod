@@ -15,8 +15,11 @@ public class OrbitCamera : MonoBehaviour {
     
     [SerializeField]
     private SettingFloat mouseSensitivity;
+    private Transform parentPos;
+    private int seated;
     private static OrbitCamera instance;
-    private Vector2 _aim;
+    private Vector2 _aimHead;
+    private Vector2 _aimController;
     private Camera cam;
     private bool tweening = false;
     private PlayerInput controls;
@@ -69,6 +72,12 @@ public class OrbitCamera : MonoBehaviour {
         orbitCameraConfigurations.Add(currentConfiguration);
         
         cam = GetComponent<Camera>();
+
+        parentPos = Instantiate(new GameObject()).transform;
+
+        transform.SetParent(parentPos,false);
+        transform.localPosition = Vector3.zero;
+
         instance = this;
     }
 
@@ -90,10 +99,16 @@ public class OrbitCamera : MonoBehaviour {
         if (mouseSensitivity != null) {
             mouseDelta *= mouseSensitivity.GetValue();
         }
+              
 
         if (tracking) {
-            // _aim += mouseDelta;
-            _aim = new Vector2(transform.rotation.eulerAngles.y, transform.localRotation.eulerAngles.x * -1);
+
+            _aimController += mouseDelta / 20f;
+
+            parentPos.rotation = Quaternion.EulerAngles(0, _aimController.x * seated, 0);
+
+            _aimHead = new Vector2(transform.rotation.eulerAngles.y, transform.localRotation.eulerAngles.x * -1);
+
             /* if (currentCameraData.clampYaw) {
                  _aim.x = Mathf.Clamp(_aim.x, -180f, 180f);
              } else {
@@ -113,13 +128,16 @@ public class OrbitCamera : MonoBehaviour {
         Vector2 desiredScreenPosition = data.screenPoint*screenSize;
 
         //transform.rotation = cameraRot;
-        transform.position = data.position + cameraRot * Vector3.back * distance;
-        
+       // transform.position = data.position + cameraRot * Vector3.back * distance;
+        parentPos.position = data.position + cameraRot * Vector3.back * distance;
+
         Ray screenRay = cam.ScreenPointToRay(desiredScreenPosition);
         Vector3 desiredProjectedPoint = screenRay.GetPoint(distance);
-        Vector3 currentProjectedPoint = transform.position + cameraRot * Vector3.forward * distance;
+        //Vector3 currentProjectedPoint = transform.position + cameraRot * Vector3.forward * distance;
+        Vector3 currentProjectedPoint = parentPos.position + cameraRot * Vector3.forward * distance;
 
-        transform.position -= (desiredProjectedPoint - currentProjectedPoint);
+        //transform.position -= (desiredProjectedPoint - currentProjectedPoint);
+        parentPos.position -= (desiredProjectedPoint - currentProjectedPoint);
 
         postRotationOffset = data.postRotationOffset;
         currentCameraData = data;
@@ -157,6 +175,12 @@ public class OrbitCamera : MonoBehaviour {
         }
     }
 
+    public static void SetSeatedMode(bool _seated)
+    {
+        if(_seated) instance.seated = 1;
+        else instance.seated = 0;
+    }
+
     public static void RemoveConfiguration(OrbitCameraConfiguration config, float tweenDuration = 0.2f) {
         if (instance == null) {
             return;
@@ -178,11 +202,11 @@ public class OrbitCamera : MonoBehaviour {
             float startTime = Time.time;
             while (Time.time < startTime + duration) {
                 float t = (Time.time - startTime) / duration;
-                Quaternion cameraRotation = Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aim.y, instance._aim.x, 0f);
+                Quaternion cameraRotation = Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aimHead.y, instance._aimHead.x, 0f);
                 SetOrbit(OrbitCameraData.Lerp(currentConfiguration.GetData(cameraRotation), next.GetData(cameraRotation), t));
                 yield return new WaitForEndOfFrame();
             }
-            SetOrbit(next.GetData(Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aim.y, instance._aim.x, 0f)));
+            SetOrbit(next.GetData(Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aimHead.y, instance._aimHead.x, 0f)));
             currentConfiguration = next;
         } finally {
             tweening = false;
@@ -191,19 +215,19 @@ public class OrbitCamera : MonoBehaviour {
             instance.StartCoroutine(instance.TweenTo(instance.orbitCameraConfigurations[^1], 0.2f));
         }
     }
-    public static Vector2 GetPlayerIntendedScreenAim() => instance._aim;
+    public static Vector2 GetPlayerIntendedScreenAim() => instance._aimHead;
     private void LateUpdate() {
         if (tweening || currentConfiguration == null) {
             return;
         }
 
-        Quaternion cameraRotation = Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aim.y, instance._aim.x, 0f);
+        Quaternion cameraRotation = Quaternion.Inverse(instance.postRotationOffset)*Quaternion.Euler(-instance._aimHead.y, instance._aimHead.x, 0f);
         SetOrbit(currentConfiguration.GetData(cameraRotation));
         cam.cullingMask = currentConfiguration.GetCullingMask();
     }
 
     public static Quaternion GetPlayerIntendedRotation() {
-        return Quaternion.Euler(-instance._aim.y, instance._aim.x, 0f);
+        return Quaternion.Euler(-instance._aimHead.y, instance._aimHead.x, 0f);
     }
 
     public static Vector3 GetPlayerIntendedPosition() {
@@ -213,7 +237,7 @@ public class OrbitCamera : MonoBehaviour {
     public static void SetPlayerIntendedFacingDirection(Vector3 dir) {
         Quaternion lookDir = QuaternionExtensions.LookRotationUpPriority(dir, Vector3.up);
         var euler = lookDir.eulerAngles;
-        instance._aim = new Vector2(-lookDir.y, lookDir.x);
+        instance._aimHead = new Vector2(-lookDir.y, lookDir.x);
     }
 
     public static void SetPlayerInput(PlayerInput input) {

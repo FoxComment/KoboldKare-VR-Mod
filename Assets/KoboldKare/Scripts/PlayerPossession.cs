@@ -23,6 +23,8 @@ public class PlayerPossession : MonoBehaviourPun {
     public GameObject diePrefab;
     public InputActionReference back;
     private PrecisionGrabber pGrabber;
+    private PrecisionGrabber pGrabberLeft;
+    private PrecisionGrabber pGrabberRight;
     public GameObject dickErectionHidable;
     private Grabber grabber;
 
@@ -183,6 +185,10 @@ public class PlayerPossession : MonoBehaviourPun {
         controls.actions["SwitchGrabMode"].performed += OnShiftMode;
         controls.actions["Grab"].performed += OnGrabInput;
         controls.actions["Grab"].canceled += OnGrabCancelled;
+        controls.actions["Grab"].performed += OnGrabRightInput;
+        controls.actions["Grab"].canceled += OnGrabRightCancelled;
+        controls.actions["Grab"].performed += OnGrabLeftInput;
+        controls.actions["Grab"].canceled += OnGrabLeftCancelled;
         controls.actions["Gib"].performed += OnGibInput;
         controls.actions["Rotate"].performed += OnRotateInput;
         controls.actions["Rotate"].canceled += OnRotateCancelled;
@@ -219,6 +225,10 @@ public class PlayerPossession : MonoBehaviourPun {
         controls.actions["SwitchGrabMode"].performed -= OnShiftMode;
         controls.actions["Grab"].performed -= OnGrabInput;
         controls.actions["Grab"].canceled -= OnGrabCancelled;
+        controls.actions["Grab"].performed -= OnGrabRightInput;
+        controls.actions["Grab"].canceled -= OnGrabRightCancelled;
+        controls.actions["Grab"].performed -= OnGrabLeftInput;
+        controls.actions["Grab"].canceled -= OnGrabLeftCancelled;
         controls.actions["Gib"].performed -= OnGibInput;
         controls.actions["Rotate"].performed -= OnRotateInput;
         controls.actions["Rotate"].canceled -= OnRotateCancelled;
@@ -393,13 +403,31 @@ public class PlayerPossession : MonoBehaviourPun {
     public void OnUse() {
         user.Use();
     }
-    public void OnGrabInput(InputAction.CallbackContext ctx) {
+    public void OnGrabInput(InputAction.CallbackContext ctx)
+    {
         grabbing = true;
-        if (switchedMode) {
+        if (switchedMode)
+        {
             pGrabber.TryGrab();
         }
     }
-    
+    public void OnGrabRightInput(InputAction.CallbackContext ctx)
+    {
+        grabbing = true;
+        if (switchedMode)
+        {
+            pGrabber.TryGrab();
+        }
+    }
+    public void OnGrabLeftInput(InputAction.CallbackContext ctx)
+    {
+        grabbing = true;
+        if (switchedMode)
+        {
+            pGrabber.TryGrab();
+        }
+    }
+
     public void OnResetHipInput(InputAction.CallbackContext ctx) {
         characterControllerAnimator.SetHipVector(Vector2.zero);
     }
@@ -411,7 +439,24 @@ public class PlayerPossession : MonoBehaviourPun {
         trackingHip = false;
     }
 
-    public void OnGrabCancelled(InputAction.CallbackContext ctx) {
+    public void OnGrabCancelled(InputAction.CallbackContext ctx)
+    {
+        grabbing = false;
+        grabber.TryDrop();
+        pGrabber.TryDrop();
+    }
+
+
+    public void OnGrabRightCancelled(InputAction.CallbackContext ctx)
+    {
+        grabbing = false;
+        grabber.TryDrop();
+        pGrabber.TryDrop();
+    }
+
+
+    public void OnGrabLeftCancelled(InputAction.CallbackContext ctx)
+    {
         grabbing = false;
         grabber.TryDrop();
         pGrabber.TryDrop();

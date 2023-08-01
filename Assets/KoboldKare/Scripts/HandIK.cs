@@ -89,10 +89,7 @@ public class HandIK : MonoBehaviour {
             animator.GetBoneTransform(HumanBodyBones.LeftHand).localScale = Vector3.one * FoxVRLoader.GetHandsSize();
 
             head.localScale = Vector3.one * .001f;
-
-
-
-
+             
 
 
 

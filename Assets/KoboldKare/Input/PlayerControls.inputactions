@@ -78,6 +78,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "GrabLeftVR",
+                    "type": "Value",
+                    "id": "ff9241f2-668e-42be-ba61-4e51ee7813c2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Grab Push and Pull",
                     "type": "Value",
                     "id": "5f8cabfe-1e20-48c9-b3d0-47c623386416",
@@ -216,6 +225,15 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "7d5c81fd-1dac-483f-86a7-029428d0cd45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "QuickActions",
+                    "type": "Button",
+                    "id": "d21275c7-4008-4f55-a142-880a679865e7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -570,7 +588,18 @@
                     "name": "",
                     "id": "a02ae2ce-6a2f-4c46-8b86-b8dbf8944a6e",
                     "path": "<XRController>{RightHand}/triggerButton",
-                    "interactions": "Hold(duration=1.401298E-45,pressPoint=0.7)",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c3cb0d0-c0e4-483e-b369-346a76dd0272",
+                    "path": "<XRController>{LeftHand}/triggerButton",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.5)",
                     "processors": "",
                     "groups": "",
                     "action": "Grab",
@@ -1164,18 +1193,7 @@
                     "name": "",
                     "id": "8adad765-ca12-4c35-b016-4e642fe2ef44",
                     "path": "<XRController>{RightHand}/triggerPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "GrabRightVR",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "904292ef-e4a8-4d4a-9f3b-a80c17ed89a9",
-                    "path": "<XRController>{LeftHand}/triggerPressed",
-                    "interactions": "",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.5)",
                     "processors": "",
                     "groups": "",
                     "action": "GrabRightVR",
@@ -1278,6 +1296,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "VRLeftHandTracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6e1bd2d-674c-47b3-9acc-f634eb1c17b5",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrabLeftVR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e277eab-1636-405c-940e-4188e4f341d8",
+                    "path": "<Keyboard>/alt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuickActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57c3f084-1aaf-4811-86fe-b0298c9cfe43",
+                    "path": "<XRController>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuickActions",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1438,6 +1489,17 @@
                     "name": "",
                     "id": "28fc5756-55fc-4411-afdb-0ac9e873bfc5",
                     "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a2b08d7-2705-4f84-bb6b-3d690e98ac33",
+                    "path": "<XRController>/primary2DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

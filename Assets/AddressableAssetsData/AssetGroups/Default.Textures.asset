@@ -3379,7 +3379,7 @@ MonoBehaviour:
     - default
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87ed80a9139c9cc419be39c2edffda92
-    m_Address: Assets/VR Mod/Graphics/rect32815-7.png
+    m_Address: Assets/VR Mod/Graphics/ControllsExpand.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
@@ -3398,6 +3398,24 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b6055711a9377aa4496b2cfd41d50670
     m_Address: Assets/KoboldKare/Textures/UI Graphics/RoundedRectOutline.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e045cc89cb12e52418b1150572c1da69
+    m_Address: Assets/KoboldKare/Textures/UI Graphics/CapsuleRect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3da0e33dacfa9e14a803820129907cb3
+    m_Address: Assets/VR Mod/Graphics/VivWand.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01ed8d8e8cfb83e418880f6ca92aec38
+    m_Address: Assets/VR Mod/Graphics/CameraTex.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
