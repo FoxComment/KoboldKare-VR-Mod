@@ -43,29 +43,52 @@ public class FoxVRVontrollerModel : MonoBehaviour
     }
 
 
+
+
+
     void OnEnable()
     {
         InputDevices.deviceConnected += DeviceConnected; 
+        InputDevices.deviceDisconnected += DeviceDisconnected;
         InputDevices.GetDevices(devices);
         foreach (var device in devices)
             DeviceConnected(device);
     }
+
     void OnDisable()
     {
         InputDevices.deviceConnected -= DeviceConnected;
+        InputDevices.deviceDisconnected -= DeviceDisconnected;
     }
+
+
+
+
+
+
     void DeviceConnected(InputDevice device) //Make it go into one handed/seated mode if one/none controllers presented
-    { 
+    {
         if ((device.characteristics & InputDeviceCharacteristics.Left) != 0)
         {
             GetModel(device);
-        } 
+        }
         else if ((device.characteristics & InputDeviceCharacteristics.Right) != 0)
         {
             GetModel(device);
         }
     }
 
+    void DeviceDisconnected(InputDevice device) //Make it go into one handed/seated mode if one/none controllers presented
+    {
+        if ((device.characteristics & InputDeviceCharacteristics.Left) != 0)
+        {
+           // GetModel(device);
+        }
+        else if ((device.characteristics & InputDeviceCharacteristics.Right) != 0)
+        {
+            //GetModel(device);
+        }
+    }
 
     private void GetModel(InputDevice device)
     { 

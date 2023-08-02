@@ -3420,6 +3420,36 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db38de994fad7994895e7a9581575406
+    m_Address: Assets/VR Mod/Graphics/ControllerIcons/MixedReal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b987dd8e5890cff4aa6e9b6a6e35d0e6
+    m_Address: Assets/VR Mod/Graphics/ControllerIcons/Indexator.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53504f51dd6eb164b9ab82e838de3696
+    m_Address: Assets/VR Mod/Graphics/ControllerIcons/OcoRifts.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b4c3df70d315dc4dadb4ff21296c7c0
+    m_Address: Assets/VR Mod/Graphics/ControllerIcons/MetaTask.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27204b1a5ea72654fad9699dd70a42aa
+    m_Address: Assets/VR Mod/Graphics/ControllerIcons/NolGeneric.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bae434cba05d81d4b9cb5c181a2fbf2c, type: 2}
   m_SchemaSet:

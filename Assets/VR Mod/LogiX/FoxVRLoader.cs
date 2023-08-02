@@ -87,7 +87,7 @@ public class FoxVRLoader : MonoBehaviour
 
     static string lastLoadedScene;
     public static bool activateHandTracking;
-    public static bool koboldIsAvailable;  
+    private static bool koboldIsAvailable;  
     public static bool endedBlackout;
     public static bool gameLoaded;
     private bool firstLauhch;
@@ -263,10 +263,10 @@ public class FoxVRLoader : MonoBehaviour
                 return instance.vrCamera.transform.position;
 
             case XRDevice.LeftHand:
-                return instance.controllersTRAs[0].transform.position;
+                return instance.controllersTRAs[1].transform.position;
 
             case XRDevice.RightHand:
-                return instance.controllersTRAs[1].transform.position;
+                return instance.controllersTRAs[0].transform.position;
 
             case XRDevice.LeftFeet:
                 return instance.leftFeet.transform.position;
@@ -314,10 +314,10 @@ public class FoxVRLoader : MonoBehaviour
                 return instance.vrCamera.transform.rotation;
 
             case XRDevice.LeftHand:
-                return instance.controllersTRAs[0].transform.rotation;
+                return instance.controllersTRAs[1].transform.rotation;
 
             case XRDevice.RightHand:
-                return instance.controllersTRAs[1].transform.rotation;
+                return instance.controllersTRAs[0].transform.rotation;
 
             case XRDevice.LeftFeet:
                 return instance.leftFeet.transform.rotation;

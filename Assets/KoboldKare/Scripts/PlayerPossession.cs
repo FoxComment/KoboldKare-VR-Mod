@@ -185,10 +185,10 @@ public class PlayerPossession : MonoBehaviourPun {
         controls.actions["SwitchGrabMode"].performed += OnShiftMode;
         controls.actions["Grab"].performed += OnGrabInput;
         controls.actions["Grab"].canceled += OnGrabCancelled;
-        controls.actions["Grab"].performed += OnGrabRightInput;
-        controls.actions["Grab"].canceled += OnGrabRightCancelled;
-        controls.actions["Grab"].performed += OnGrabLeftInput;
-        controls.actions["Grab"].canceled += OnGrabLeftCancelled;
+        controls.actions["GrabRightVR"].performed += OnGrabRightInput;
+        controls.actions["GrabRightVR"].canceled += OnGrabRightCancelled;
+        controls.actions["GrabLeftVR"].performed += OnGrabLeftInput;
+        controls.actions["GrabLeftVR"].canceled += OnGrabLeftCancelled;
         controls.actions["Gib"].performed += OnGibInput;
         controls.actions["Rotate"].performed += OnRotateInput;
         controls.actions["Rotate"].canceled += OnRotateCancelled;
@@ -225,10 +225,10 @@ public class PlayerPossession : MonoBehaviourPun {
         controls.actions["SwitchGrabMode"].performed -= OnShiftMode;
         controls.actions["Grab"].performed -= OnGrabInput;
         controls.actions["Grab"].canceled -= OnGrabCancelled;
-        controls.actions["Grab"].performed -= OnGrabRightInput;
-        controls.actions["Grab"].canceled -= OnGrabRightCancelled;
-        controls.actions["Grab"].performed -= OnGrabLeftInput;
-        controls.actions["Grab"].canceled -= OnGrabLeftCancelled;
+        controls.actions["GrabRightVR"].performed -= OnGrabRightInput;
+        controls.actions["GrabRightVR"].canceled -= OnGrabRightCancelled;
+        controls.actions["GrabLeftVR"].performed -= OnGrabLeftInput;
+        controls.actions["GrabLeftVR"].canceled -= OnGrabLeftCancelled;
         controls.actions["Gib"].performed -= OnGibInput;
         controls.actions["Rotate"].performed -= OnRotateInput;
         controls.actions["Rotate"].canceled -= OnRotateCancelled;
@@ -274,7 +274,7 @@ public class PlayerPossession : MonoBehaviourPun {
         if (erectionUp-erectionDown != 0f) {
             kobold.PumpUpDick((erectionUp-erectionDown*2f)*Time.deltaTime*0.3f);
         }
-        Vector2 moveInput = controls.actions["Move"].ReadValue<Vector2>();
+        Vector2 moveInput = controls.actions["Move"].ReadValue<Vector2>() + controls.actions["MoveVR"].ReadValue<Vector2>();
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         FoxVRLoader.ActivateTunneling(body.velocity.magnitude > 1.5f);
         //pGrabber.inputRotation = rotate;
@@ -333,7 +333,7 @@ public class PlayerPossession : MonoBehaviourPun {
             bool shouldCancelAnimation = false;
             //shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Rotate"].ReadValue<float>() > 0.5f);
             //shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Unfreeze"].ReadValue<float>() > 0.5f);
-            shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Jump"].ReadValue<float>() > 0.5f);
+            shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Jump"].ReadValue<float>() + controls.actions["JumpVR"].ReadValue<float>() > 0.5f);
             shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Gib"].ReadValue<float>() > 0.5f);
             shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Ragdoll"].ReadValue<float>() > 0.5f);
             shouldCancelAnimation = (shouldCancelAnimation | controls.actions["Cancel"].ReadValue<float>() > 0.5f);
@@ -361,10 +361,23 @@ public class PlayerPossession : MonoBehaviourPun {
         }
         characterControllerAnimator.SetEyeRot(OrbitCamera.GetPlayerIntendedScreenAim());
     }
-    public void OnJump(InputValue value) {
+
+    public void OnJump(InputValue value)
+    {
         if (!isActiveAndEnabled) return;
         controller.inputJump = value.Get<float>() > 0f;
-        if (!photonView.IsMine) {
+        if (!photonView.IsMine)
+        {
+            photonView.RequestOwnership();
+        }
+    }
+
+    public void OnJumpVR(InputValue value)
+    {
+        if (!isActiveAndEnabled) return;
+        controller.inputJump = value.Get<float>() > 0f;
+        if (!photonView.IsMine)
+        {
             photonView.RequestOwnership();
         }
     }
@@ -408,7 +421,7 @@ public class PlayerPossession : MonoBehaviourPun {
         grabbing = true;
         if (switchedMode)
         {
-            pGrabber.TryGrab();
+            pGrabber.TryGrab(FoxVRLoader.XRDevice.Head);
         }
     }
     public void OnGrabRightInput(InputAction.CallbackContext ctx)
@@ -416,7 +429,7 @@ public class PlayerPossession : MonoBehaviourPun {
         grabbing = true;
         if (switchedMode)
         {
-            pGrabber.TryGrab();
+            pGrabber.TryGrab(FoxVRLoader.XRDevice.RightHand);
         }
     }
     public void OnGrabLeftInput(InputAction.CallbackContext ctx)
@@ -424,7 +437,7 @@ public class PlayerPossession : MonoBehaviourPun {
         grabbing = true;
         if (switchedMode)
         {
-            pGrabber.TryGrab();
+            pGrabber.TryGrab(FoxVRLoader.XRDevice.LeftHand);
         }
     }
 

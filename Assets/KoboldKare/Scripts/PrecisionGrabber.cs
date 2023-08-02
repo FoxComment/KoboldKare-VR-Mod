@@ -37,16 +37,35 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
         handDisplayPrefab = newHandDisplayPrefab;
         freezeVFX = newFreezeVFX;
         unfreezeSound = newUnfreezeSound;
-        
-        if (previewHandAnimator != null) {
+
+        if (previewHandAnimator != null)
+        {
             Destroy(previewHandAnimator);
+        }
+        if (previewLeftHandAnimator != null)
+        {
+            Destroy(previewLeftHandAnimator);
+        }
+        if (previewRightHandAnimator != null)
+        {
+            Destroy(previewRightHandAnimator);
         }
 
         previewHandAnimator = Instantiate(handDisplayPrefab, transform)
             .GetComponentInChildren<Animator>();
+        previewLeftHandAnimator = Instantiate(handDisplayPrefab, transform)
+            .GetComponentInChildren<Animator>();
+        previewRightHandAnimator = Instantiate(handDisplayPrefab, transform)
+            .GetComponentInChildren<Animator>();
         previewHandAnimator.SetBool(GrabbingHash, true);
+        previewLeftHandAnimator.SetBool(GrabbingHash, true);
+        previewRightHandAnimator.SetBool(GrabbingHash, true);
         previewHandTransform = previewHandAnimator.GetBoneTransform(HumanBodyBones.RightHand);
+        previewLeftHandTransform = previewLeftHandAnimator.GetBoneTransform(HumanBodyBones.LeftHand);
+        previewRightHandTransform = previewRightHandAnimator.GetBoneTransform(HumanBodyBones.LeftHand);
         previewHandAnimator.gameObject.SetActive(false);
+        previewLeftHandAnimator.gameObject.SetActive(false);
+        previewRightHandAnimator.gameObject.SetActive(false);
     }
 
     public void SetView(Transform newView) {
@@ -58,7 +77,11 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
     private static readonly int BrightnessContrastSaturation = Shader.PropertyToID("_HueBrightnessContrastSaturation");
     private RaycastHitDistanceComparer raycastHitDistanceComparer;
     private Animator previewHandAnimator;
+    private Animator previewRightHandAnimator;
+    private Animator previewLeftHandAnimator;
     private Transform previewHandTransform;
+    private Transform previewRightHandTransform;
+    private Transform previewLeftHandTransform;
     private Grab currentGrab;
     private List<Grab> frozenGrabs;
     private const float springForce = 2000f;
@@ -393,9 +416,19 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
         removeIds = new List<Grab>();
         previewHandAnimator = Instantiate(handDisplayPrefab, transform)
             .GetComponentInChildren<Animator>();
+        previewLeftHandAnimator = Instantiate(handDisplayPrefab, transform)
+            .GetComponentInChildren<Animator>();
+        previewRightHandAnimator = Instantiate(handDisplayPrefab, transform)
+            .GetComponentInChildren<Animator>();
         previewHandAnimator.SetBool(GrabbingHash, true);
+        previewLeftHandAnimator.SetBool(GrabbingHash, true);
+        previewRightHandAnimator.SetBool(GrabbingHash, true);
         previewHandTransform = previewHandAnimator.GetBoneTransform(HumanBodyBones.RightHand);
+        previewLeftHandTransform = previewLeftHandAnimator.GetBoneTransform(HumanBodyBones.RightHand);
+        previewRightHandTransform = previewRightHandAnimator.GetBoneTransform(HumanBodyBones.RightHand);
         previewHandAnimator.gameObject.SetActive(false);
+        previewLeftHandAnimator.gameObject.SetActive(false);
+        previewRightHandAnimator.gameObject.SetActive(false);
         //handVisibilityEvent.AddListener(OnHandVisibilityChanged);
     }
 
@@ -439,15 +472,39 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
         }
     }
 
-    private Vector3 GetViewPos() {
+    private Vector3 GetViewPos(FoxVRLoader.XRDevice input) {
         if (!photonView.IsMine) {
+
             return view.position;
         }
-        return OrbitCamera.GetPlayerIntendedPosition();
+        switch (input)
+        {
+            case FoxVRLoader.XRDevice.LeftHand:
+                return FoxVRLoader.GetTrackedDevicePosition(input);
+            case FoxVRLoader.XRDevice.RightHand:
+                return FoxVRLoader.GetTrackedDevicePosition(input);
+            default:
+                return OrbitCamera.GetPlayerIntendedPosition();
+        }
+
+        //return OrbitCamera.GetPlayerIntendedPosition();
     }
 
-    private bool TryRaycastGrab(float maxDistance, out RaycastHit? previewHit) {
-        int numHits = Physics.RaycastNonAlloc(GetViewPos(), OrbitCamera.GetPlayerIntendedRotation() * Vector3.forward, hits, maxDistance, GameManager.instance.precisionGrabMask, QueryTriggerInteraction.Ignore);
+    private bool TryRaycastGrab(float maxDistance, FoxVRLoader.XRDevice input, out RaycastHit? previewHit)
+    {
+        int numHits = 0;
+        switch (input)
+        {//s
+            case FoxVRLoader.XRDevice.LeftHand:
+                numHits = Physics.RaycastNonAlloc(GetViewPos(input), FoxVRLoader.GetTrackedDeviceRotation(input) * Vector3.forward, hits, maxDistance, GameManager.instance.precisionGrabMask, QueryTriggerInteraction.Ignore);
+                break;
+            case FoxVRLoader.XRDevice.RightHand:
+                numHits = Physics.RaycastNonAlloc(GetViewPos(input), FoxVRLoader.GetTrackedDeviceRotation(input) * Vector3.forward, hits, maxDistance, GameManager.instance.precisionGrabMask, QueryTriggerInteraction.Ignore);
+                break;
+            default:
+                numHits = Physics.RaycastNonAlloc(GetViewPos(FoxVRLoader.XRDevice.Head), OrbitCamera.GetPlayerIntendedRotation() * Vector3.forward, hits, maxDistance, GameManager.instance.precisionGrabMask, QueryTriggerInteraction.Ignore);
+                break;
+        }
         if (numHits == 0) {
             previewHit = null;
             return false;
@@ -476,17 +533,63 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
         previewGrab = previewEnabled;
     }
 
-    private void DoPreview() {
-        if (previewGrab && currentGrab == null && TryRaycastGrab(maxGrabDistance, out RaycastHit? previewHit)) {
+    private void DoPreview()
+    {
+        if (previewGrab && currentGrab == null && TryRaycastGrab(maxGrabDistance, FoxVRLoader.XRDevice.Head, out RaycastHit? previewHit))
+        {
             RaycastHit hit = previewHit.Value;
             previewHandTransform.rotation = Quaternion.LookRotation(-hit.normal, Vector3.up) * Quaternion.AngleAxis(90f, new Vector3(0.0f, 1.0f, 0.0f));
-            previewHandTransform.position = hit.point + previewHandTransform.rotation*Vector3.down*0.1f;
-            if (!previewHandAnimator.gameObject.activeInHierarchy) {
+            previewHandTransform.position = hit.point + previewHandTransform.rotation * Vector3.down * 0.1f;
+            if (!previewHandAnimator.gameObject.activeInHierarchy)
+            {
                 previewHandAnimator.gameObject.SetActive(true);
             }
-        } else {
-            if (previewHandAnimator.gameObject.activeInHierarchy) {
+        }
+        else
+        {
+            if (previewHandAnimator.gameObject.activeInHierarchy)
+            {
                 previewHandAnimator.gameObject.SetActive(false);
+            }
+        }
+
+
+
+        if (previewGrab && currentGrab == null && TryRaycastGrab(maxGrabDistance, FoxVRLoader.XRDevice.LeftHand, out RaycastHit? previewHitLeft))
+        {
+            RaycastHit hit = previewHitLeft.Value;
+            previewLeftHandTransform.rotation = Quaternion.LookRotation(-hit.normal, Vector3.up) * Quaternion.AngleAxis(90f, new Vector3(0.0f, 1.0f, 0.0f));
+            previewLeftHandTransform.position = hit.point + previewLeftHandTransform.rotation * Vector3.down * 0.1f;
+            if (!previewLeftHandAnimator.gameObject.activeInHierarchy)
+            {
+                previewLeftHandAnimator.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (previewLeftHandAnimator.gameObject.activeInHierarchy)
+            {
+                previewLeftHandAnimator.gameObject.SetActive(false);
+            }
+        }
+
+
+
+        if (previewGrab && currentGrab == null && TryRaycastGrab(maxGrabDistance, FoxVRLoader.XRDevice.RightHand, out RaycastHit? previewHitRight))
+        {
+            RaycastHit hit = previewHitRight.Value;
+            previewRightHandTransform.rotation = Quaternion.LookRotation(-hit.normal, Vector3.up) * Quaternion.AngleAxis(90f, new Vector3(0.0f, 1.0f, 0.0f));
+            previewRightHandTransform.position = hit.point + previewRightHandTransform.rotation * Vector3.down * 0.1f;
+            if (!previewRightHandAnimator.gameObject.activeInHierarchy)
+            {
+                previewRightHandAnimator.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (previewRightHandAnimator.gameObject.activeInHierarchy)
+            {
+                previewRightHandAnimator.gameObject.SetActive(false);
             }
         }
     }
@@ -528,11 +631,11 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
         PhotonProfiler.LogReceive(sizeof(int)*2+sizeof(float)*6);
     }
 
-    public void TryGrab() {
+    public void TryGrab(FoxVRLoader.XRDevice input) {
         if (currentGrab != null || !photonView.IsMine) {
             return;
         }
-        if (!TryRaycastGrab(maxGrabDistance, out RaycastHit? hitTest)) {
+        if (!TryRaycastGrab(maxGrabDistance, input, out RaycastHit? hitTest)) {
             return;
         }
 
@@ -613,7 +716,7 @@ public class PrecisionGrabber : MonoBehaviourPun, IPunObservable, ISavable {
             return false;
         }
 
-        if (!TryRaycastGrab(100f, out RaycastHit? testHit)) {
+        if (!TryRaycastGrab(100f, FoxVRLoader.XRDevice.Head, out RaycastHit? testHit)) {
             return false;
         }
 
