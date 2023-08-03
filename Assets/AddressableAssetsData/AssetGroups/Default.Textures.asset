@@ -3450,6 +3450,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8eb9ad217fa7e7a4dadcf1f57a375566
+    m_Address: Assets/VR Mod/Graphics/BatInd.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 829c5b96c8bbcf14391b367e298d8c80
+    m_Address: Assets/VR Mod/Graphics/VRDevsIco.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6149b15a863f47c4193fc46eb5acfa9a
+    m_Address: Assets/VR Mod/Graphics/KKDevsIco.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bae434cba05d81d4b9cb5c181a2fbf2c, type: 2}
   m_SchemaSet:
