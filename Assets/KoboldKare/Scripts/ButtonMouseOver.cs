@@ -54,7 +54,7 @@ public class ButtonMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
         StopAllCoroutines();
-        StartCoroutine(ScaleUp(0.3f));
+        StartCoroutine(ScaleUp(0.2f));
         lastEvent = EventType.Hover;
         PlaySFX();
     }
@@ -64,7 +64,7 @@ public class ButtonMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
         StopAllCoroutines();
-        StartCoroutine(ScaleBack(0.3f));
+        StartCoroutine(ScaleBack(0.2f));
     }
 
     public void OnSelect(BaseEventData eventData) {
@@ -72,7 +72,7 @@ public class ButtonMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
         StopAllCoroutines();
-        StartCoroutine(ScaleUp(0.3f));
+        StartCoroutine(ScaleUp(0.2f));
         lastEvent = EventType.Hover;
         PlaySFX();
     }
@@ -82,7 +82,7 @@ public class ButtonMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
         StopAllCoroutines();
-        StartCoroutine(ScaleBack(0.3f));
+        StartCoroutine(ScaleBack(0.2f));
     }
 
     public void OnSubmit(BaseEventData eventData){

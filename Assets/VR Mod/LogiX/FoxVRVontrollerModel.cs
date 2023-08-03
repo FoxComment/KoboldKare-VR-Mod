@@ -49,10 +49,10 @@ public class FoxVRVontrollerModel : MonoBehaviour
     void OnEnable()
     {
         InputDevices.deviceConnected += DeviceConnected; 
-        InputDevices.deviceDisconnected += DeviceDisconnected;
         InputDevices.GetDevices(devices);
         foreach (var device in devices)
             DeviceConnected(device);
+        InputDevices.deviceDisconnected += DeviceDisconnected;
     }
 
     void OnDisable()
@@ -64,7 +64,7 @@ public class FoxVRVontrollerModel : MonoBehaviour
 
 
 
-
+    
 
     void DeviceConnected(InputDevice device) //Make it go into one handed/seated mode if one/none controllers presented
     {
@@ -80,14 +80,7 @@ public class FoxVRVontrollerModel : MonoBehaviour
 
     void DeviceDisconnected(InputDevice device) //Make it go into one handed/seated mode if one/none controllers presented
     {
-        if ((device.characteristics & InputDeviceCharacteristics.Left) != 0)
-        {
-           // GetModel(device);
-        }
-        else if ((device.characteristics & InputDeviceCharacteristics.Right) != 0)
-        {
-            //GetModel(device);
-        }
+        StartCoroutine(FoxVRLoader.ControllerDiedAt(transform.position));
     }
 
     private void GetModel(InputDevice device)

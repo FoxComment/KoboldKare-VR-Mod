@@ -105,6 +105,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "UseVR",
+                    "type": "Button",
+                    "id": "5405e210-0a63-4392-9f09-55a9e3a19f2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Grab Push and Pull",
                     "type": "Value",
                     "id": "5f8cabfe-1e20-48c9-b3d0-47c623386416",
@@ -485,28 +494,6 @@
                     "name": "",
                     "id": "2d37ac9e-7897-4308-baec-ff6cab944bcb",
                     "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Use",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ccc86631-330e-4726-b796-9bdbd37cf915",
-                    "path": "<XRController>{RightHand}/triggerPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Use",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "61ffecd7-e5cc-4f31-911c-f8589e653018",
-                    "path": "<XRController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1089,7 +1076,7 @@
                 {
                     "name": "",
                     "id": "8adad765-ca12-4c35-b016-4e642fe2ef44",
-                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "path": "<ViveController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1199,7 +1186,7 @@
                 {
                     "name": "",
                     "id": "d6e1bd2d-674c-47b3-9acc-f634eb1c17b5",
-                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "path": "<ViveController>{LeftHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1325,6 +1312,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "JumpVR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "545c79ab-7730-4504-8e7e-e808f003a8fd",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseVR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ed9aa25-33df-4b7e-bc65-4dcbe6a7ba6f",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseVR",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1693,10 +1702,21 @@
                 {
                     "name": "",
                     "id": "9c951ee6-ca21-44b0-80d1-9b3a62be6a9b",
-                    "path": "<XRController>/trigger",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57119dad-1fe2-496a-a598-4cd5fc605778",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false

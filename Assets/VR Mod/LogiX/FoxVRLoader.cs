@@ -7,6 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityScriptableSettings;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class FoxVRLoader : MonoBehaviour
 {
@@ -42,6 +44,8 @@ public class FoxVRLoader : MonoBehaviour
     private GameObject gameManOBJ;
     private GameObject masterCanvOBJ;
     private GameObject fpsCanvOBJ;
+    [SerializeField]
+    private GameObject controllerDeathEffect;
     [SerializeField]
     private Transform leftFeet;
     [SerializeField]
@@ -520,6 +524,7 @@ public class FoxVRLoader : MonoBehaviour
     void SetupUIOverlays(bool _inMenu)
     {
         masterCanvOBJ.GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
+        masterCanvOBJ.GetComponent<Canvas>().worldCamera = activeCamera;
 
         if (uiRenderCamera != null) 
             Destroy(uiRenderCamera.gameObject);
@@ -615,7 +620,16 @@ public class FoxVRLoader : MonoBehaviour
         controllerModelsOBJs[1].SetActive(_visible); 
     }
 
+    public static IEnumerator ControllerDiedAt(Vector3 _pos)
+    {
+        instance.controllerDeathEffect.transform.position = _pos;
 
+        instance.controllerDeathEffect.SetActive(true);
+
+        yield return new WaitForSeconds(3);
+
+        instance.controllerDeathEffect.SetActive(false);
+    }
 
     #endregion
 
@@ -766,6 +780,10 @@ public class FoxVRLoader : MonoBehaviour
     void OnTestFunctionsChanged(int value)
     { 
         upcommingFeatures = (value == 1);
+        foreach (GameObject item in upcommingFeaturesGroup)
+        {
+            item.SetActive(upcommingFeatures);
+        }
     } 
 
 

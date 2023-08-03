@@ -413,7 +413,12 @@ public class PlayerPossession : MonoBehaviourPun {
         //spoilable.spoilIntensity = 1f;
         //spoilable.OnSpoilEvent.Invoke();
     }
-    public void OnUse() {
+    public void OnUse()
+    {
+        user.Use();
+    }
+    public void OnUseVR()
+    {
         user.Use();
     }
     public void OnGrabInput(InputAction.CallbackContext ctx)
